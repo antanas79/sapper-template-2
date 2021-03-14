@@ -1,0 +1,30 @@
+{
+    "nav": {
+        "linkText1": "Home",
+        "linkText2": "About",
+        "linkText3": "Contacts",
+        "localeSwitcher": {
+            "language": "Language"
+        }
+    },
+    "About": {
+        "Title": "Apie",
+        "H1": "Tai yra apie H1",
+        "P": "P"
+    },
+    "Contacts": {
+        "Title": "Kontaktai",
+        "H1": "Tai yra kontaktu H1",
+        "P": "P"
+    },
+    "Index": {
+        "Title": "Pagrindinis",
+        "H1": "Tai yra pagrindinis H1",
+        "P": "P"
+    },
+    "PreloadError": "Page Not Found",
+    "footer": {
+
+    }
+
+}

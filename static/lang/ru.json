@@ -1,0 +1,29 @@
+{
+    "nav" : {
+        "linkText1": "Главный",
+        "linkText2": "около",
+        "linkText3": "контакты",
+        "localeSwitcher": {
+            "language": "язык"
+        }
+    },
+    "About": {
+        "Title": "Apie",
+        "H1": "Tai yra apie H1",
+        "P": "P"
+    },
+    "Contacts": {
+        "Title": "Kontaktai",
+        "H1": "Tai yra kontaktu H1",
+        "P": "P"
+    },
+    "Index": {
+        "Title": "Pagrindinis",
+        "H1": "Tai yra pagrindinis H1",
+        "P": "P"
+    },
+    "PreloadError": "Страница не найдена",
+    "footer": {
+
+    }
+}
