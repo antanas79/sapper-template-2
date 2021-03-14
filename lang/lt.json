@@ -1,0 +1,35 @@
+{
+    "nav" : {
+        "linkText1": "Pagrindinis",
+        "linkText2": "Apie",
+        "linkText3": "Kontaktai",
+        "localeSwitcher": {
+            "language": "Kalba"
+        }
+    },
+    "About": {
+        "Title": "Apie",
+        "H1": "Svarainių plantacija žemaitijoje, netoli Mažeikių, Pikelių kaime.",
+        "P1": "Derlius nuimamas būna kiekvienais metais rugsėjį- spalį, todėl rezervacijos laukiamos keletą mėnesių prieš ar panašiai šiuo metu.",
+        "P2": "Derlius būna apie 5 tonos."
+    },
+    "Contacts": {
+        "Title": "Kontaktai",
+        "H1": "Kontaktai pasiteirauti:",
+        "P1": "Paskambinti:",
+        "P2": "Parašyti:"
+    },
+    "Index": {
+        "Title": "Pagrindinis",
+        "H1": "Priimamos svarainių rezervacijos",
+        "P1": "Paskambinkite ar parašykite norėdami gauti užklausą dėl svarainių rezervacijos, kurių derlius būna nuimamas rugsėjo- spalio mėnesiais."
+    },
+    "PreloadError": "Puslapis nerastas!",
+    "footer": {
+        "phone": "+37062689356",
+        "phoneToAppear": "8 626 89356",
+        "email": "svarainiai@gmail.com",
+        "writeUsAnEmail": "Parašykite mums laišką",
+        "callUs": "Paskambinkite pasiteirauti"
+    }
+}
