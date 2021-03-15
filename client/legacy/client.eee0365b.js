@@ -23854,23 +23854,23 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
 var ignore = [/^\/blog\.json$/, /^\/blog\/([^/]+?)\.json$/];
 var components = [{
   js: function js() {
-    return Promise.all([import('./index.a360115b.js'), ]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.2030ceda.js'), ]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./contacts.93c4ba0e.js'), ]).then(function(x) { return x[0]; });
+    return Promise.all([import('./contacts.0f9264e0.js'), ]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./about.9eda8032.js'), ]).then(function(x) { return x[0]; });
+    return Promise.all([import('./about.f387c452.js'), ]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./index.b9a55a14.js'), ]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.f0578bf5.js'), ]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./[slug].d2cff437.js'), ]).then(function(x) { return x[0]; });
+    return Promise.all([import('./[slug].24fe19f3.js'), ]).then(function(x) { return x[0]; });
   }
 }];
 var routes = function (d) {
