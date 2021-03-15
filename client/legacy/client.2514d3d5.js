@@ -7358,7 +7358,7 @@ var _activeLocale; // Internal store for tracking network
 
 
 var isDownloading = writable(false);
-var MESSAGE_FILE_URL_TEMPLATE = "/lang/{locale}.json";
+var MESSAGE_FILE_URL_TEMPLATE = "https://antanas79.github.io/sapper-template-2/lang/{locale}.json";
 
 function setupI18n(options) {
   var _ref = options || 'lt',
@@ -23517,23 +23517,23 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
 var ignore = [/^\/blog\.json$/, /^\/blog\/([^/]+?)\.json$/];
 var components = [{
   js: function js() {
-    return Promise.all([import('./index.f83b5834.js'), ]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.d3625767.js'), ]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./contacts.f3e981d7.js'), ]).then(function(x) { return x[0]; });
+    return Promise.all([import('./contacts.8375cf7e.js'), ]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./about.ad395dca.js'), ]).then(function(x) { return x[0]; });
+    return Promise.all([import('./about.2fc131ab.js'), ]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./index.cd5642fe.js'), ]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.964b72d0.js'), ]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./[slug].2d347f3d.js'), ]).then(function(x) { return x[0]; });
+    return Promise.all([import('./[slug].679f8f88.js'), ]).then(function(x) { return x[0]; });
   }
 }];
 var routes = function (d) {
