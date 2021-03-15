@@ -7358,7 +7358,6 @@ var _activeLocale; // Internal store for tracking network
 
 
 var isDownloading = writable(false);
-console.log();
 var MESSAGE_FILE_URL_TEMPLATE = "/lang/{locale}.json";
 
 function setupI18n(options) {
@@ -7378,6 +7377,8 @@ function setupI18n(options) {
       u(locale_, messages);
       L.set(locale_);
       isDownloading.set(false);
+    }).catch(function (err) {
+      return console.log(err);
     });
   }
 }
@@ -7393,6 +7394,8 @@ var isLocaleLoaded = derived([isDownloading, i], function (_ref2) {
 function loadJson(url) {
   return browser(url).then(function (response) {
     return response.json();
+  }).catch(function (err) {
+    return console.log(err);
   });
 }
 
@@ -23514,23 +23517,23 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
 var ignore = [/^\/blog\.json$/, /^\/blog\/([^/]+?)\.json$/];
 var components = [{
   js: function js() {
-    return Promise.all([import('./index.3a6d0941.js'), ]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.f83b5834.js'), ]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./contacts.9228ed40.js'), ]).then(function(x) { return x[0]; });
+    return Promise.all([import('./contacts.f3e981d7.js'), ]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./about.b141b31a.js'), ]).then(function(x) { return x[0]; });
+    return Promise.all([import('./about.ad395dca.js'), ]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./index.feb5a22c.js'), ]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.cd5642fe.js'), ]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./[slug].751a1002.js'), ]).then(function(x) { return x[0]; });
+    return Promise.all([import('./[slug].2d347f3d.js'), ]).then(function(x) { return x[0]; });
   }
 }];
 var routes = function (d) {
