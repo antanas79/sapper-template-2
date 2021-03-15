@@ -13,7 +13,6 @@ let _activeLocale;
 // Internal store for tracking network
 // loading state
 const isDownloading = writable(false);
-console.log()
 const MESSAGE_FILE_URL_TEMPLATE = "/lang/{locale}.json";
 
 

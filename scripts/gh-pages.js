@@ -1,7 +1,7 @@
 const ghpages = require('gh-pages');
 
 ghpages.publish(
-    '__sapper__/export/sapper-template',
+    '__sapper__/export/sapper-template-2',
     {
         branch: 'master',
         repo: 'https://github.com/antanas79/sapper-template-2.git',
