@@ -12,9 +12,11 @@ self.addEventListener('install', event => {
 		caches
 			.open(ASSETS)
 			.then(cache => cache.addAll(to_cache))
+			.catch((err)=> console.log(err))
 			.then(() => {
 				self.skipWaiting();
 			})
+			.catch((err)=> console.log(err))
 	);
 });
 

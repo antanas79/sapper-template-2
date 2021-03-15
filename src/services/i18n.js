@@ -13,7 +13,7 @@ let _activeLocale;
 // Internal store for tracking network
 // loading state
 const isDownloading = writable(false);
-const MESSAGE_FILE_URL_TEMPLATE = "/lang/{locale}.json";
+const MESSAGE_FILE_URL_TEMPLATE = "https://antanas79.github.io/sapper-template-2/lang/{locale}.json";
 
 
 function setupI18n(options) {
@@ -36,7 +36,7 @@ function setupI18n(options) {
       addMessages(locale_, messages);
       locale.set(locale_);
       isDownloading.set(false);
-    });
+    }).catch((err) => console.log(err));
   }
 }
 const isLocaleLoaded = derived(
@@ -48,8 +48,8 @@ const isLocaleLoaded = derived(
 );
 
 function loadJson(url) {
-    return fetch(url).then((response) => response.json());
-  }
+    return fetch(url).then((response) => response.json()).catch((err) => console.log(err));
+}
 
 function hasLoadedLocale(locale) {
 // If the svelte-i18n dictionary has an entry for the
