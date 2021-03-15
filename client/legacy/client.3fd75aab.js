@@ -951,9 +951,9 @@ function _createClass(Constructor, protoProps, staticProps) {
   return Constructor;
 }
 
-function _createSuper$i(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$i(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$j(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$j(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$i() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+function _isNativeReflectConstruct$j() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 function noop() {}
 
@@ -1213,6 +1213,10 @@ function claim_text(nodes, data) {
 
 function claim_space(nodes) {
   return claim_text(nodes, ' ');
+}
+
+function set_style(node, key, value, important) {
+  node.style.setProperty(key, value, important ? 'important' : '');
 }
 
 function custom_event(type, detail) {
@@ -1725,7 +1729,7 @@ function validate_slots(name, slot, keys) {
 var SvelteComponentDev = /*#__PURE__*/function (_SvelteComponent) {
   _inherits(SvelteComponentDev, _SvelteComponent);
 
-  var _super2 = _createSuper$i(SvelteComponentDev);
+  var _super2 = _createSuper$j(SvelteComponentDev);
 
   function SvelteComponentDev(options) {
     _classCallCheck(this, SvelteComponentDev);
@@ -13663,12 +13667,12 @@ function useActions(node, actions) {
 var css_248z = ".mdc-menu-surface{display:none;position:absolute;box-sizing:border-box;max-width:calc(100vw - 32px);max-height:calc(100vh - 32px);margin:0;padding:0;transform:scale(1);transform-origin:top left;opacity:0;overflow:auto;will-change:transform,opacity;z-index:8;transition:opacity .03s linear,transform .12s cubic-bezier(0,0,.2,1);box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);background-color:#fff;background-color:var(--mdc-theme-surface,#fff);color:#000;color:var(--mdc-theme-on-surface,#000);border-radius:4px;transform-origin-left:top left;transform-origin-right:top right}.mdc-menu-surface:focus{outline:none}.mdc-menu-surface--open{display:inline-block;transform:scale(1);opacity:1}.mdc-menu-surface--animating-open{display:inline-block;transform:scale(.8);opacity:0}.mdc-menu-surface--animating-closed{display:inline-block;opacity:0;transition:opacity 75ms linear}.mdc-menu-surface[dir=rtl],[dir=rtl] .mdc-menu-surface{transform-origin-left:top right;transform-origin-right:top left}.mdc-menu-surface--anchor{position:relative;overflow:visible}.mdc-menu-surface--fixed{position:fixed}.smui-menu-surface--static{position:static;z-index:0;display:inline-block;transform:scale(1);opacity:1}";
 styleInject(css_248z);
 
-function _createSuper$h(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$h(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$i(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$i(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$h() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-var file$d = "node_modules/@smui/menu-surface/MenuSurface.svelte";
+function _isNativeReflectConstruct$i() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+var file$e = "node_modules/@smui/menu-surface/MenuSurface.svelte";
 
-function create_fragment$h(ctx) {
+function create_fragment$i(ctx) {
   var div;
   var div_class_value;
   var useActions_action;
@@ -13717,7 +13721,7 @@ function create_fragment$h(ctx) {
     },
     h: function hydrate() {
       set_attributes(div, div_data);
-      add_location(div, file$d, 0, 0, 0);
+      add_location(div, file$e, 0, 0, 0);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -13801,7 +13805,7 @@ function create_fragment$h(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$h.name,
+    id: create_fragment$i.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -13809,7 +13813,7 @@ function create_fragment$h(ctx) {
   return block;
 }
 
-function instance$h($$self, $$props, $$invalidate) {
+function instance$i($$self, $$props, $$invalidate) {
   var _$$props = $$props,
       _$$props$$$slots = _$$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
@@ -14118,7 +14122,7 @@ function instance$h($$self, $$props, $$invalidate) {
 var MenuSurface = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(MenuSurface, _SvelteComponentDev);
 
-  var _super = _createSuper$h(MenuSurface);
+  var _super = _createSuper$i(MenuSurface);
 
   function MenuSurface(options) {
     var _this;
@@ -14126,7 +14130,7 @@ var MenuSurface = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, MenuSurface);
 
     _this = _super.call(this, options);
-    init$1(_assertThisInitialized(_this), options, instance$h, create_fragment$h, safe_not_equal, {
+    init$1(_assertThisInitialized(_this), options, instance$i, create_fragment$i, safe_not_equal, {
       use: 2,
       class: 3,
       static: 4,
@@ -14150,7 +14154,7 @@ var MenuSurface = /*#__PURE__*/function (_SvelteComponentDev) {
       component: _assertThisInitialized(_this),
       tagName: "MenuSurface",
       options: options,
-      id: create_fragment$h.name
+      id: create_fragment$i.name
     });
     return _this;
   }
@@ -14343,9 +14347,9 @@ function Anchor(node, _ref) {
   };
 }
 
-function _createSuper$g(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$g(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$h(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$h(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$g() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+function _isNativeReflectConstruct$h() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 function create_default_slot$5(ctx) {
   var current;
@@ -14403,7 +14407,7 @@ function create_default_slot$5(ctx) {
   return block;
 }
 
-function create_fragment$g(ctx) {
+function create_fragment$h(ctx) {
   var menusurface;
   var updating_element;
   var current;
@@ -14535,7 +14539,7 @@ function create_fragment$g(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$g.name,
+    id: create_fragment$h.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -14543,7 +14547,7 @@ function create_fragment$g(ctx) {
   return block;
 }
 
-function instance$g($$self, $$props, $$invalidate) {
+function instance$h($$self, $$props, $$invalidate) {
   var _$$props = $$props,
       _$$props$$$slots = _$$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
@@ -14856,7 +14860,7 @@ function instance$g($$self, $$props, $$invalidate) {
 var Menu = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(Menu, _SvelteComponentDev);
 
-  var _super = _createSuper$g(Menu);
+  var _super = _createSuper$h(Menu);
 
   function Menu(options) {
     var _this;
@@ -14864,7 +14868,7 @@ var Menu = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, Menu);
 
     _this = _super.call(this, options);
-    init$1(_assertThisInitialized(_this), options, instance$g, create_fragment$g, safe_not_equal, {
+    init$1(_assertThisInitialized(_this), options, instance$h, create_fragment$h, safe_not_equal, {
       use: 0,
       class: 1,
       static: 7,
@@ -14890,7 +14894,7 @@ var Menu = /*#__PURE__*/function (_SvelteComponentDev) {
       component: _assertThisInitialized(_this),
       tagName: "Menu",
       options: options,
-      id: create_fragment$g.name
+      id: create_fragment$h.name
     });
     return _this;
   }
@@ -15060,10 +15064,10 @@ var Menu = /*#__PURE__*/function (_SvelteComponentDev) {
   return Menu;
 }(SvelteComponentDev);
 
-function _createSuper$f(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$f(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$g(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$g(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$f() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-var file$c = "node_modules/@smui/list/List.svelte"; // (18:0) {:else}
+function _isNativeReflectConstruct$g() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+var file$d = "node_modules/@smui/list/List.svelte"; // (18:0) {:else}
 
 function create_else_block$3(ctx) {
   var ul;
@@ -15125,7 +15129,7 @@ function create_else_block$3(ctx) {
     },
     h: function hydrate() {
       set_attributes(ul, ul_data);
-      add_location(ul, file$c, 18, 2, 478);
+      add_location(ul, file$d, 18, 2, 478);
     },
     m: function mount(target, anchor) {
       insert_dev(target, ul, anchor);
@@ -15280,7 +15284,7 @@ function create_if_block$6(ctx) {
     },
     h: function hydrate() {
       set_attributes(nav_1, nav_1_data);
-      add_location(nav_1, file$c, 1, 2, 12);
+      add_location(nav_1, file$d, 1, 2, 12);
     },
     m: function mount(target, anchor) {
       insert_dev(target, nav_1, anchor);
@@ -15373,7 +15377,7 @@ function create_if_block$6(ctx) {
   return block;
 }
 
-function create_fragment$f(ctx) {
+function create_fragment$g(ctx) {
   var current_block_type_index;
   var if_block;
   var if_block_anchor;
@@ -15423,7 +15427,7 @@ function create_fragment$f(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$f.name,
+    id: create_fragment$g.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -15431,7 +15435,7 @@ function create_fragment$f(ctx) {
   return block;
 }
 
-function instance$f($$self, $$props, $$invalidate) {
+function instance$g($$self, $$props, $$invalidate) {
   var props;
   var _$$props = $$props,
       _$$props$$$slots = _$$props.$$slots,
@@ -15727,7 +15731,7 @@ function instance$f($$self, $$props, $$invalidate) {
 var List = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(List, _SvelteComponentDev);
 
-  var _super = _createSuper$f(List);
+  var _super = _createSuper$g(List);
 
   function List(options) {
     var _this;
@@ -15735,7 +15739,7 @@ var List = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, List);
 
     _this = _super.call(this, options);
-    init$1(_assertThisInitialized(_this), options, instance$f, create_fragment$f, safe_not_equal, {
+    init$1(_assertThisInitialized(_this), options, instance$g, create_fragment$g, safe_not_equal, {
       use: 0,
       class: 1,
       nonInteractive: 2,
@@ -15757,7 +15761,7 @@ var List = /*#__PURE__*/function (_SvelteComponentDev) {
       component: _assertThisInitialized(_this),
       tagName: "List",
       options: options,
-      id: create_fragment$f.name
+      id: create_fragment$g.name
     });
     return _this;
   }
@@ -15895,10 +15899,10 @@ var List = /*#__PURE__*/function (_SvelteComponentDev) {
   return List;
 }(SvelteComponentDev);
 
-function _createSuper$e(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$e(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$f(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$f(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$e() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-var file$b = "node_modules/@smui/floating-label/FloatingLabel.svelte"; // (13:0) {:else}
+function _isNativeReflectConstruct$f() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+var file$c = "node_modules/@smui/floating-label/FloatingLabel.svelte"; // (13:0) {:else}
 
 function create_else_block$2(ctx) {
   var label;
@@ -15959,7 +15963,7 @@ function create_else_block$2(ctx) {
     },
     h: function hydrate() {
       set_attributes(label, label_data);
-      add_location(label, file$b, 13, 2, 317);
+      add_location(label, file$c, 13, 2, 317);
     },
     m: function mount(target, anchor) {
       insert_dev(target, label, anchor);
@@ -16102,7 +16106,7 @@ function create_if_block$5(ctx) {
     },
     h: function hydrate() {
       set_attributes(span, span_data);
-      add_location(span, file$b, 1, 2, 16);
+      add_location(span, file$c, 1, 2, 16);
     },
     m: function mount(target, anchor) {
       insert_dev(target, span, anchor);
@@ -16183,7 +16187,7 @@ function create_if_block$5(ctx) {
   return block;
 }
 
-function create_fragment$e(ctx) {
+function create_fragment$f(ctx) {
   var current_block_type_index;
   var if_block;
   var if_block_anchor;
@@ -16258,7 +16262,7 @@ function create_fragment$e(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$e.name,
+    id: create_fragment$f.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -16266,7 +16270,7 @@ function create_fragment$e(ctx) {
   return block;
 }
 
-function instance$e($$self, $$props, $$invalidate) {
+function instance$f($$self, $$props, $$invalidate) {
   var _$$props = $$props,
       _$$props$$$slots = _$$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
@@ -16396,7 +16400,7 @@ function instance$e($$self, $$props, $$invalidate) {
 var FloatingLabel = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(FloatingLabel, _SvelteComponentDev);
 
-  var _super = _createSuper$e(FloatingLabel);
+  var _super = _createSuper$f(FloatingLabel);
 
   function FloatingLabel(options) {
     var _this;
@@ -16404,7 +16408,7 @@ var FloatingLabel = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, FloatingLabel);
 
     _this = _super.call(this, options);
-    init$1(_assertThisInitialized(_this), options, instance$e, create_fragment$e, safe_not_equal, {
+    init$1(_assertThisInitialized(_this), options, instance$f, create_fragment$f, safe_not_equal, {
       use: 0,
       class: 1,
       for: 2,
@@ -16418,7 +16422,7 @@ var FloatingLabel = /*#__PURE__*/function (_SvelteComponentDev) {
       component: _assertThisInitialized(_this),
       tagName: "FloatingLabel",
       options: options,
-      id: create_fragment$e.name
+      id: create_fragment$f.name
     });
     return _this;
   }
@@ -16492,12 +16496,12 @@ var FloatingLabel = /*#__PURE__*/function (_SvelteComponentDev) {
   return FloatingLabel;
 }(SvelteComponentDev);
 
-function _createSuper$d(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$d(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$e(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$e(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$d() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-var file$a = "node_modules/@smui/line-ripple/LineRipple.svelte";
+function _isNativeReflectConstruct$e() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+var file$b = "node_modules/@smui/line-ripple/LineRipple.svelte";
 
-function create_fragment$d(ctx) {
+function create_fragment$e(ctx) {
   var div;
   var div_class_value;
   var useActions_action;
@@ -16532,7 +16536,7 @@ function create_fragment$d(ctx) {
     },
     h: function hydrate() {
       set_attributes(div, div_data);
-      add_location(div, file$a, 0, 0, 0);
+      add_location(div, file$b, 0, 0, 0);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -16584,7 +16588,7 @@ function create_fragment$d(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$d.name,
+    id: create_fragment$e.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -16592,7 +16596,7 @@ function create_fragment$d(ctx) {
   return block;
 }
 
-function instance$d($$self, $$props, $$invalidate) {
+function instance$e($$self, $$props, $$invalidate) {
   var _$$props = $$props,
       _$$props$$$slots = _$$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots;
@@ -16694,7 +16698,7 @@ function instance$d($$self, $$props, $$invalidate) {
 var LineRipple = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(LineRipple, _SvelteComponentDev);
 
-  var _super = _createSuper$d(LineRipple);
+  var _super = _createSuper$e(LineRipple);
 
   function LineRipple(options) {
     var _this;
@@ -16702,7 +16706,7 @@ var LineRipple = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, LineRipple);
 
     _this = _super.call(this, options);
-    init$1(_assertThisInitialized(_this), options, instance$d, create_fragment$d, safe_not_equal, {
+    init$1(_assertThisInitialized(_this), options, instance$e, create_fragment$e, safe_not_equal, {
       use: 0,
       class: 1,
       active: 2,
@@ -16714,7 +16718,7 @@ var LineRipple = /*#__PURE__*/function (_SvelteComponentDev) {
       component: _assertThisInitialized(_this),
       tagName: "LineRipple",
       options: options,
-      id: create_fragment$d.name
+      id: create_fragment$e.name
     });
     return _this;
   }
@@ -16772,10 +16776,10 @@ var LineRipple = /*#__PURE__*/function (_SvelteComponentDev) {
   return LineRipple;
 }(SvelteComponentDev);
 
-function _createSuper$c(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$c(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$d(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$d(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$c() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-var file$9 = "node_modules/@smui/notched-outline/NotchedOutline.svelte"; // (14:2) {#if !noLabel}
+function _isNativeReflectConstruct$d() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+var file$a = "node_modules/@smui/notched-outline/NotchedOutline.svelte"; // (14:2) {#if !noLabel}
 
 function create_if_block$4(ctx) {
   var div;
@@ -16803,7 +16807,7 @@ function create_if_block$4(ctx) {
     },
     h: function hydrate() {
       attr_dev(div, "class", "mdc-notched-outline__notch");
-      add_location(div, file$9, 14, 4, 367);
+      add_location(div, file$a, 14, 4, 367);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -16849,7 +16853,7 @@ function create_if_block$4(ctx) {
   return block;
 }
 
-function create_fragment$c(ctx) {
+function create_fragment$d(ctx) {
   var div2;
   var div0;
   var t0;
@@ -16911,11 +16915,11 @@ function create_fragment$c(ctx) {
     },
     h: function hydrate() {
       attr_dev(div0, "class", "mdc-notched-outline__leading");
-      add_location(div0, file$9, 12, 2, 297);
+      add_location(div0, file$a, 12, 2, 297);
       attr_dev(div1, "class", "mdc-notched-outline__trailing");
-      add_location(div1, file$9, 16, 2, 437);
+      add_location(div1, file$a, 16, 2, 437);
       set_attributes(div2, div2_data);
-      add_location(div2, file$9, 0, 0, 0);
+      add_location(div2, file$a, 0, 0, 0);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div2, anchor);
@@ -17008,7 +17012,7 @@ function create_fragment$c(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$c.name,
+    id: create_fragment$d.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -17016,7 +17020,7 @@ function create_fragment$c(ctx) {
   return block;
 }
 
-function instance$c($$self, $$props, $$invalidate) {
+function instance$d($$self, $$props, $$invalidate) {
   var _$$props = $$props,
       _$$props$$$slots = _$$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
@@ -17118,7 +17122,7 @@ function instance$c($$self, $$props, $$invalidate) {
 var NotchedOutline = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(NotchedOutline, _SvelteComponentDev);
 
-  var _super = _createSuper$c(NotchedOutline);
+  var _super = _createSuper$d(NotchedOutline);
 
   function NotchedOutline(options) {
     var _this;
@@ -17126,7 +17130,7 @@ var NotchedOutline = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, NotchedOutline);
 
     _this = _super.call(this, options);
-    init$1(_assertThisInitialized(_this), options, instance$c, create_fragment$c, safe_not_equal, {
+    init$1(_assertThisInitialized(_this), options, instance$d, create_fragment$d, safe_not_equal, {
       use: 0,
       class: 1,
       notched: 2,
@@ -17138,7 +17142,7 @@ var NotchedOutline = /*#__PURE__*/function (_SvelteComponentDev) {
       component: _assertThisInitialized(_this),
       tagName: "NotchedOutline",
       options: options,
-      id: create_fragment$c.name
+      id: create_fragment$d.name
     });
     return _this;
   }
@@ -17196,10 +17200,10 @@ var NotchedOutline = /*#__PURE__*/function (_SvelteComponentDev) {
   return NotchedOutline;
 }(SvelteComponentDev);
 
-function _createSuper$b(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$b(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$c(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$c(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$b() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-var file$8 = "node_modules/@smui/select/Select.svelte";
+function _isNativeReflectConstruct$c() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+var file$9 = "node_modules/@smui/select/Select.svelte";
 
 var get_label_slot_changes_1 = function get_label_slot_changes_1(dirty) {
   return {};
@@ -18066,7 +18070,7 @@ function create_default_slot$4(ctx) {
   return block;
 }
 
-function create_fragment$b(ctx) {
+function create_fragment$c(ctx) {
   var div2;
   var div1;
   var t0;
@@ -18291,13 +18295,13 @@ function create_fragment$b(ctx) {
     },
     h: function hydrate() {
       attr_dev(i, "class", "mdc-select__dropdown-icon");
-      add_location(i, file$8, 39, 4, 1633);
+      add_location(i, file$9, 39, 4, 1633);
       set_attributes(div0, div0_data);
-      add_location(div0, file$8, 40, 4, 1679);
+      add_location(div0, file$9, 40, 4, 1679);
       set_attributes(div1, div1_data);
-      add_location(div1, file$8, 21, 2, 959);
+      add_location(div1, file$9, 21, 2, 959);
       set_attributes(div2, div2_data);
-      add_location(div2, file$8, 0, 0, 0);
+      add_location(div2, file$9, 0, 0, 0);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div2, anchor);
@@ -18588,7 +18592,7 @@ function create_fragment$b(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$b.name,
+    id: create_fragment$c.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -18598,7 +18602,7 @@ function create_fragment$b(ctx) {
 
 var counter$1 = 0;
 
-function instance$b($$self, $$props, $$invalidate) {
+function instance$c($$self, $$props, $$invalidate) {
   var $valueStore;
   var $selectedTextStore;
   var _$$props = $$props,
@@ -18986,7 +18990,7 @@ function instance$b($$self, $$props, $$invalidate) {
 var Select = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(Select, _SvelteComponentDev);
 
-  var _super = _createSuper$b(Select);
+  var _super = _createSuper$c(Select);
 
   function Select(options) {
     var _this;
@@ -18994,7 +18998,7 @@ var Select = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, Select);
 
     _this = _super.call(this, options);
-    init$1(_assertThisInitialized(_this), options, instance$b, create_fragment$b, safe_not_equal, {
+    init$1(_assertThisInitialized(_this), options, instance$c, create_fragment$c, safe_not_equal, {
       use: 2,
       class: 3,
       ripple: 4,
@@ -19023,7 +19027,7 @@ var Select = /*#__PURE__*/function (_SvelteComponentDev) {
       component: _assertThisInitialized(_this),
       tagName: "Select",
       options: options,
-      id: create_fragment$b.name
+      id: create_fragment$c.name
     });
     return _this;
   }
@@ -19217,12 +19221,12 @@ var Select = /*#__PURE__*/function (_SvelteComponentDev) {
   return Select;
 }(SvelteComponentDev);
 
-function _createSuper$a(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$a(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$b(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$b(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$a() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-var file$7 = "node_modules/@smui/common/A.svelte";
+function _isNativeReflectConstruct$b() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+var file$8 = "node_modules/@smui/common/A.svelte";
 
-function create_fragment$a(ctx) {
+function create_fragment$b(ctx) {
   var a;
   var useActions_action;
   var current;
@@ -19264,7 +19268,7 @@ function create_fragment$a(ctx) {
     },
     h: function hydrate() {
       set_attributes(a, a_data);
-      add_location(a, file$7, 0, 0, 0);
+      add_location(a, file$8, 0, 0, 0);
     },
     m: function mount(target, anchor) {
       insert_dev(target, a, anchor);
@@ -19338,7 +19342,7 @@ function create_fragment$a(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$a.name,
+    id: create_fragment$b.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -19346,7 +19350,7 @@ function create_fragment$a(ctx) {
   return block;
 }
 
-function instance$a($$self, $$props, $$invalidate) {
+function instance$b($$self, $$props, $$invalidate) {
   var _$$props = $$props,
       _$$props$$$slots = _$$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
@@ -19415,7 +19419,7 @@ function instance$a($$self, $$props, $$invalidate) {
 var A = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(A, _SvelteComponentDev);
 
-  var _super = _createSuper$a(A);
+  var _super = _createSuper$b(A);
 
   function A(options) {
     var _this;
@@ -19423,7 +19427,7 @@ var A = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, A);
 
     _this = _super.call(this, options);
-    init$1(_assertThisInitialized(_this), options, instance$a, create_fragment$a, safe_not_equal, {
+    init$1(_assertThisInitialized(_this), options, instance$b, create_fragment$b, safe_not_equal, {
       href: 1,
       element: 0,
       use: 2,
@@ -19433,7 +19437,7 @@ var A = /*#__PURE__*/function (_SvelteComponentDev) {
       component: _assertThisInitialized(_this),
       tagName: "A",
       options: options,
-      id: create_fragment$a.name
+      id: create_fragment$b.name
     });
     return _this;
   }
@@ -19475,12 +19479,12 @@ var A = /*#__PURE__*/function (_SvelteComponentDev) {
   return A;
 }(SvelteComponentDev);
 
-function _createSuper$9(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$9(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$a(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$a(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$9() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-var file$6 = "node_modules/@smui/common/Span.svelte";
+function _isNativeReflectConstruct$a() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+var file$7 = "node_modules/@smui/common/Span.svelte";
 
-function create_fragment$9(ctx) {
+function create_fragment$a(ctx) {
   var span;
   var useActions_action;
   var current;
@@ -19516,7 +19520,7 @@ function create_fragment$9(ctx) {
     },
     h: function hydrate() {
       set_attributes(span, span_data);
-      add_location(span, file$6, 0, 0, 0);
+      add_location(span, file$7, 0, 0, 0);
     },
     m: function mount(target, anchor) {
       insert_dev(target, span, anchor);
@@ -19584,7 +19588,7 @@ function create_fragment$9(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$9.name,
+    id: create_fragment$a.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -19592,7 +19596,7 @@ function create_fragment$9(ctx) {
   return block;
 }
 
-function instance$9($$self, $$props, $$invalidate) {
+function instance$a($$self, $$props, $$invalidate) {
   var _$$props = $$props,
       _$$props$$$slots = _$$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
@@ -19655,7 +19659,7 @@ function instance$9($$self, $$props, $$invalidate) {
 var Span = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(Span, _SvelteComponentDev);
 
-  var _super = _createSuper$9(Span);
+  var _super = _createSuper$a(Span);
 
   function Span(options) {
     var _this;
@@ -19663,7 +19667,7 @@ var Span = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, Span);
 
     _this = _super.call(this, options);
-    init$1(_assertThisInitialized(_this), options, instance$9, create_fragment$9, safe_not_equal, {
+    init$1(_assertThisInitialized(_this), options, instance$a, create_fragment$a, safe_not_equal, {
       element: 0,
       use: 1,
       forwardEvents: 4
@@ -19672,7 +19676,7 @@ var Span = /*#__PURE__*/function (_SvelteComponentDev) {
       component: _assertThisInitialized(_this),
       tagName: "Span",
       options: options,
-      id: create_fragment$9.name
+      id: create_fragment$a.name
     });
     return _this;
   }
@@ -19706,12 +19710,12 @@ var Span = /*#__PURE__*/function (_SvelteComponentDev) {
   return Span;
 }(SvelteComponentDev);
 
-function _createSuper$8(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$8(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$9(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$9(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$8() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-var file$5 = "node_modules/@smui/common/Li.svelte";
+function _isNativeReflectConstruct$9() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+var file$6 = "node_modules/@smui/common/Li.svelte";
 
-function create_fragment$8(ctx) {
+function create_fragment$9(ctx) {
   var li;
   var useActions_action;
   var current;
@@ -19747,7 +19751,7 @@ function create_fragment$8(ctx) {
     },
     h: function hydrate() {
       set_attributes(li, li_data);
-      add_location(li, file$5, 1, 0, 1);
+      add_location(li, file$6, 1, 0, 1);
     },
     m: function mount(target, anchor) {
       insert_dev(target, li, anchor);
@@ -19815,7 +19819,7 @@ function create_fragment$8(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$8.name,
+    id: create_fragment$9.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -19823,7 +19827,7 @@ function create_fragment$8(ctx) {
   return block;
 }
 
-function instance$8($$self, $$props, $$invalidate) {
+function instance$9($$self, $$props, $$invalidate) {
   var _$$props = $$props,
       _$$props$$$slots = _$$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
@@ -19886,7 +19890,7 @@ function instance$8($$self, $$props, $$invalidate) {
 var Li = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(Li, _SvelteComponentDev);
 
-  var _super = _createSuper$8(Li);
+  var _super = _createSuper$9(Li);
 
   function Li(options) {
     var _this;
@@ -19894,7 +19898,7 @@ var Li = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, Li);
 
     _this = _super.call(this, options);
-    init$1(_assertThisInitialized(_this), options, instance$8, create_fragment$8, safe_not_equal, {
+    init$1(_assertThisInitialized(_this), options, instance$9, create_fragment$9, safe_not_equal, {
       element: 0,
       use: 1,
       forwardEvents: 4
@@ -19903,7 +19907,7 @@ var Li = /*#__PURE__*/function (_SvelteComponentDev) {
       component: _assertThisInitialized(_this),
       tagName: "Li",
       options: options,
-      id: create_fragment$8.name
+      id: create_fragment$9.name
     });
     return _this;
   }
@@ -20116,9 +20120,9 @@ function Ripple(node) {
   };
 }
 
-function _createSuper$7(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$7(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$8(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$8(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$7() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+function _isNativeReflectConstruct$8() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 function create_default_slot$3(ctx) {
   var current;
@@ -20176,7 +20180,7 @@ function create_default_slot$3(ctx) {
   return block;
 }
 
-function create_fragment$7(ctx) {
+function create_fragment$8(ctx) {
   var switch_instance;
   var updating_element;
   var switch_instance_anchor;
@@ -20490,7 +20494,7 @@ function create_fragment$7(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$7.name,
+    id: create_fragment$8.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -20500,7 +20504,7 @@ function create_fragment$7(ctx) {
 
 var counter = 0;
 
-function instance$7($$self, $$props, $$invalidate) {
+function instance$8($$self, $$props, $$invalidate) {
   var _$$props = $$props,
       _$$props$$$slots = _$$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
@@ -20723,7 +20727,7 @@ function instance$7($$self, $$props, $$invalidate) {
 var Item = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(Item, _SvelteComponentDev);
 
-  var _super = _createSuper$7(Item);
+  var _super = _createSuper$8(Item);
 
   function Item(options) {
     var _this;
@@ -20731,7 +20735,7 @@ var Item = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, Item);
 
     _this = _super.call(this, options);
-    init$1(_assertThisInitialized(_this), options, instance$7, create_fragment$7, safe_not_equal, {
+    init$1(_assertThisInitialized(_this), options, instance$8, create_fragment$8, safe_not_equal, {
       use: 1,
       class: 2,
       ripple: 3,
@@ -20750,7 +20754,7 @@ var Item = /*#__PURE__*/function (_SvelteComponentDev) {
       component: _assertThisInitialized(_this),
       tagName: "Item",
       options: options,
-      id: create_fragment$7.name
+      id: create_fragment$8.name
     });
     return _this;
   }
@@ -20864,9 +20868,9 @@ var Item = /*#__PURE__*/function (_SvelteComponentDev) {
   return Item;
 }(SvelteComponentDev);
 
-function _createSuper$6(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$6(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$7(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$7(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$6() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+function _isNativeReflectConstruct$7() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 function create_default_slot$2(ctx) {
   var current;
@@ -20924,7 +20928,7 @@ function create_default_slot$2(ctx) {
   return block;
 }
 
-function create_fragment$6(ctx) {
+function create_fragment$7(ctx) {
   var item;
   var current;
   var item_spread_levels = [{
@@ -21035,7 +21039,7 @@ function create_fragment$6(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$6.name,
+    id: create_fragment$7.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -21043,7 +21047,7 @@ function create_fragment$6(ctx) {
   return block;
 }
 
-function instance$6($$self, $$props, $$invalidate) {
+function instance$7($$self, $$props, $$invalidate) {
   var selected;
   var $valueStore;
   var $selectedText;
@@ -21154,7 +21158,7 @@ function instance$6($$self, $$props, $$invalidate) {
 var Option = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(Option, _SvelteComponentDev);
 
-  var _super = _createSuper$6(Option);
+  var _super = _createSuper$7(Option);
 
   function Option(options) {
     var _this;
@@ -21162,7 +21166,7 @@ var Option = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, Option);
 
     _this = _super.call(this, options);
-    init$1(_assertThisInitialized(_this), options, instance$6, create_fragment$6, safe_not_equal, {
+    init$1(_assertThisInitialized(_this), options, instance$7, create_fragment$7, safe_not_equal, {
       use: 0,
       class: 8,
       value: 1,
@@ -21172,7 +21176,7 @@ var Option = /*#__PURE__*/function (_SvelteComponentDev) {
       component: _assertThisInitialized(_this),
       tagName: "Option",
       options: options,
-      id: create_fragment$6.name
+      id: create_fragment$7.name
     });
     return _this;
   }
@@ -21214,19 +21218,19 @@ var Option = /*#__PURE__*/function (_SvelteComponentDev) {
   return Option;
 }(SvelteComponentDev);
 
-function _createSuper$5(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$5(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$6(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$6(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$5() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-var file$4 = "src/components/Controllers/LocaleSwitcher.svelte";
+function _isNativeReflectConstruct$6() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+var file$5 = "src/components/Controllers/LocaleSwitcher.svelte";
 
-function add_css$4() {
+function add_css$5() {
   var style = element("style");
   style.id = "svelte-1gglync-style";
   style.textContent = ".choose-locale.svelte-1gglync{display:flex;justify-content:center}.select.svelte-1gglync{margin:0 1rem 1rem;max-width:55px}.mdc-select__selected-text{min-width:0!important}.mdc-menu{min-width:0!important}.select-width{max-width:55px;width:55px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTG9jYWxlU3dpdGNoZXIuc3ZlbHRlIiwic291cmNlcyI6WyJMb2NhbGVTd2l0Y2hlci5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgaW1wb3J0IHsgY3JlYXRlRXZlbnREaXNwYXRjaGVyIH0gZnJvbSBcInN2ZWx0ZVwiO1xuICBpbXBvcnQgU2VsZWN0LCB7T3B0aW9ufSBmcm9tICdAc211aS9zZWxlY3QnO1xuICBsZXQgbGFuZ3VhZ2VzID0gWydsdCcsICdlbicsICdydSddO1xuICBleHBvcnQgbGV0IHZhbHVlID0gJ2x0JztcbiAgaW1wb3J0IHsgXyB9IGZyb20gXCIuLi8uLi9zZXJ2aWNlcy9pMThuXCI7XG5cbiAgY29uc3QgZGlzcGF0Y2ggPSBjcmVhdGVFdmVudERpc3BhdGNoZXIoKTtcblxuICBmdW5jdGlvbiBzd2l0Y2hMb2NhbGUoZXZlbnQpIHtcbiAgICBkaXNwYXRjaChcImxvY2FsZS1jaGFuZ2VkXCIsIGV2ZW50KTtcbiAgfVxuPC9zY3JpcHQ+XG5cbjxkaXYgY2xhc3M9XCJjaG9vc2UtbG9jYWxlXCI+XG4gIDxkaXYgY2xhc3M9XCJzZWxlY3RcIj5cbiAgICA8U2VsZWN0XG4gICAgICBiaW5kOnZhbHVlPXt2YWx1ZX1cbiAgICAgIGxhYmVsPVwieyRfKCduYXYubG9jYWxlU3dpdGNoZXIubGFuZ3VhZ2UnKX1cIlxuICAgICAgYW5jaG9yJGNsYXNzPVwic2VsZWN0LXdpZHRoXCJcbiAgICAgIG1lbnUkY2xhc3M9XCJzZWxlY3Qtd2lkdGhcIlxuICAgID5cbiAgICAgIHsjZWFjaCBsYW5ndWFnZXMgYXMgbGFuZ3VhZ2V9XG4gICAgICAgIDxPcHRpb24gdmFsdWU9e2xhbmd1YWdlfSBvbjpjbGljaz17ICgpID0+IHsgc3dpdGNoTG9jYWxlKGxhbmd1YWdlKSB9IH0+e2xhbmd1YWdlfTwvT3B0aW9uPlxuICAgICAgey9lYWNofVxuICAgIDwvU2VsZWN0PlxuICA8L2Rpdj5cbjwvZGl2PlxuXG5cbjxzdHlsZT5cbiAgLmNob29zZS1sb2NhbGUge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIH1cbiAgLnNlbGVjdCB7XG4gICAgbWFyZ2luOiAwIDFyZW0gMXJlbTtcbiAgICBtYXgtd2lkdGg6IDU1cHg7XG4gIH1cblxuICA6Z2xvYmFsKC5tZGMtc2VsZWN0X19zZWxlY3RlZC10ZXh0KSAge1xuICAgIG1pbi13aWR0aDogMCFpbXBvcnRhbnQ7XG4gIH1cblxuICA6Z2xvYmFsKC5tZGMtbWVudSkge1xuICAgICAgbWluLXdpZHRoOiAwIWltcG9ydGFudDtcbiAgICB9XG5cbiAgOmdsb2JhbCguc2VsZWN0LXdpZHRoKSB7XG4gICAgbWF4LXdpZHRoOiA1NXB4O1xuICAgIHdpZHRoOiA1NXB4O1xuICB9XG5cblxuXG48L3N0eWxlPlxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQStCRSxjQUFjLGVBQUMsQ0FBQyxBQUNkLE9BQU8sQ0FBRSxJQUFJLENBQ2IsZUFBZSxDQUFFLE1BQU0sQUFDekIsQ0FBQyxBQUNELE9BQU8sZUFBQyxDQUFDLEFBQ1AsTUFBTSxDQUFFLENBQUMsQ0FBQyxJQUFJLENBQUMsSUFBSSxDQUNuQixTQUFTLENBQUUsSUFBSSxBQUNqQixDQUFDLEFBRU8sMEJBQTBCLEFBQUcsQ0FBQyxBQUNwQyxTQUFTLENBQUUsQ0FBQyxVQUFVLEFBQ3hCLENBQUMsQUFFTyxTQUFTLEFBQUUsQ0FBQyxBQUNoQixTQUFTLENBQUUsQ0FBQyxVQUFVLEFBQ3hCLENBQUMsQUFFSyxhQUFhLEFBQUUsQ0FBQyxBQUN0QixTQUFTLENBQUUsSUFBSSxDQUNmLEtBQUssQ0FBRSxJQUFJLEFBQ2IsQ0FBQyJ9 */";
   append_dev(document.head, style);
 }
 
-function get_each_context(ctx, list, i) {
+function get_each_context$1(ctx, list, i) {
   var child_ctx = ctx.slice();
   child_ctx[7] = list[i];
   return child_ctx;
@@ -21264,7 +21268,7 @@ function create_default_slot_1(ctx) {
 } // (23:6) {#each languages as language}
 
 
-function create_each_block(ctx) {
+function create_each_block$1(ctx) {
   var option;
   var current;
 
@@ -21333,7 +21337,7 @@ function create_each_block(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_each_block.name,
+    id: create_each_block$1.name,
     type: "each",
     source: "(23:6) {#each languages as language}",
     ctx: ctx
@@ -21352,7 +21356,7 @@ function create_default_slot$1(ctx) {
   var each_blocks = [];
 
   for (var i = 0; i < each_value.length; i += 1) {
-    each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+    each_blocks[i] = create_each_block$1(get_each_context$1(ctx, each_value, i));
   }
 
   var out = function out(i) {
@@ -21396,14 +21400,14 @@ function create_default_slot$1(ctx) {
         var _i4;
 
         for (_i4 = 0; _i4 < each_value.length; _i4 += 1) {
-          var child_ctx = get_each_context(ctx, each_value, _i4);
+          var child_ctx = get_each_context$1(ctx, each_value, _i4);
 
           if (each_blocks[_i4]) {
             each_blocks[_i4].p(child_ctx, dirty);
 
             transition_in(each_blocks[_i4], 1);
           } else {
-            each_blocks[_i4] = create_each_block(child_ctx);
+            each_blocks[_i4] = create_each_block$1(child_ctx);
 
             each_blocks[_i4].c();
 
@@ -21455,7 +21459,7 @@ function create_default_slot$1(ctx) {
   return block;
 }
 
-function create_fragment$5(ctx) {
+function create_fragment$6(ctx) {
   var div1;
   var div0;
   var select;
@@ -21519,9 +21523,9 @@ function create_fragment$5(ctx) {
     },
     h: function hydrate() {
       attr_dev(div0, "class", "select svelte-1gglync");
-      add_location(div0, file$4, 15, 2, 377);
+      add_location(div0, file$5, 15, 2, 377);
       attr_dev(div1, "class", "choose-locale svelte-1gglync");
-      add_location(div1, file$4, 14, 0, 347);
+      add_location(div1, file$5, 14, 0, 347);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div1, anchor);
@@ -21579,7 +21583,7 @@ function create_fragment$5(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$5.name,
+    id: create_fragment$6.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -21587,7 +21591,7 @@ function create_fragment$5(ctx) {
   return block;
 }
 
-function instance$5($$self, $$props, $$invalidate) {
+function instance$6($$self, $$props, $$invalidate) {
   var $_;
   validate_store(ne, "_");
   component_subscribe($$self, ne, function ($$value) {
@@ -21653,7 +21657,7 @@ function instance$5($$self, $$props, $$invalidate) {
 var LocaleSwitcher = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(LocaleSwitcher, _SvelteComponentDev);
 
-  var _super = _createSuper$5(LocaleSwitcher);
+  var _super = _createSuper$6(LocaleSwitcher);
 
   function LocaleSwitcher(options) {
     var _this;
@@ -21661,15 +21665,15 @@ var LocaleSwitcher = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, LocaleSwitcher);
 
     _this = _super.call(this, options);
-    if (!document.getElementById("svelte-1gglync-style")) add_css$4();
-    init$1(_assertThisInitialized(_this), options, instance$5, create_fragment$5, safe_not_equal, {
+    if (!document.getElementById("svelte-1gglync-style")) add_css$5();
+    init$1(_assertThisInitialized(_this), options, instance$6, create_fragment$6, safe_not_equal, {
       value: 0
     });
     dispatch_dev("SvelteRegisterComponent", {
       component: _assertThisInitialized(_this),
       tagName: "LocaleSwitcher",
       options: options,
-      id: create_fragment$5.name
+      id: create_fragment$6.name
     });
     return _this;
   }
@@ -21687,19 +21691,19 @@ var LocaleSwitcher = /*#__PURE__*/function (_SvelteComponentDev) {
   return LocaleSwitcher;
 }(SvelteComponentDev);
 
-function _createSuper$4(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$4(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$5(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$5(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$4() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-var file$3 = "src/components/Nav.svelte";
+function _isNativeReflectConstruct$5() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+var file$4 = "src/components/Nav.svelte";
 
-function add_css$3() {
+function add_css$4() {
   var style = element("style");
   style.id = "svelte-1913wcy-style";
   style.textContent = "nav.svelte-1913wcy.svelte-1913wcy{border-bottom:1px solid rgba(255, 62, 0, 0.1);font-weight:300;padding:0 1em;display:flex;justify-content:center}ul.svelte-1913wcy.svelte-1913wcy{margin:0;padding:0}ul.svelte-1913wcy.svelte-1913wcy::after{content:\"\";display:block;clear:both}li.svelte-1913wcy.svelte-1913wcy{display:block;float:left}[aria-current].svelte-1913wcy.svelte-1913wcy{position:relative;display:inline-block}[aria-current].svelte-1913wcy.svelte-1913wcy::after{position:absolute;content:\"\";width:calc(100% - 1em);height:2px;background-color:rgb(255, 62, 0);display:block;bottom:-1px}nav.svelte-1913wcy .content-container.svelte-1913wcy{display:flex;justify-content:space-between;align-items:center}a.svelte-1913wcy.svelte-1913wcy{text-decoration:none;padding:1em 0.5em;display:block}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTmF2LnN2ZWx0ZSIsInNvdXJjZXMiOlsiTmF2LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBleHBvcnQgbGV0IHNlZ21lbnQ7XG4gIGltcG9ydCB7IF8sIGxvY2FsZSwgc2V0dXBJMThuIH0gZnJvbSBcIi4uL3NlcnZpY2VzL2kxOG5cIjtcbiAgaW1wb3J0IExvY2FsZVN3aXRjaGVyIGZyb20gXCIuL0NvbnRyb2xsZXJzL0xvY2FsZVN3aXRjaGVyLnN2ZWx0ZVwiO1xuPC9zY3JpcHQ+XG5cbjxuYXY+XG4gIDxkaXYgY2xhc3M9XCJjb250ZW50LWNvbnRhaW5lclwiPlxuICAgIDx1bD5cbiAgICAgIDxsaT5cbiAgICAgICAgPGEgYXJpYS1jdXJyZW50PXtzZWdtZW50ID09PSB1bmRlZmluZWQgPyBcInBhZ2VcIiA6IHVuZGVmaW5lZH0gaHJlZj1cIi5cIlxuICAgICAgICAgID57JF8oXCJuYXYubGlua1RleHQxXCIpfTwvYVxuICAgICAgICA+XG4gICAgICA8L2xpPlxuICAgICAgPGxpPlxuICAgICAgICA8YSBhcmlhLWN1cnJlbnQ9e3NlZ21lbnQgPT09IFwiYWJvdXRcIiA/IFwicGFnZVwiIDogdW5kZWZpbmVkfSBocmVmPVwiYWJvdXRcIlxuICAgICAgICAgID57JF8oXCJuYXYubGlua1RleHQyXCIpfTwvYVxuICAgICAgICA+XG4gICAgICA8L2xpPlxuICAgICAgPGxpPlxuICAgICAgICA8YVxuICAgICAgICAgIGFyaWEtY3VycmVudD17c2VnbWVudCA9PT0gXCJjb250YWN0c1wiID8gXCJwYWdlXCIgOiB1bmRlZmluZWR9XG4gICAgICAgICAgaHJlZj1cImNvbnRhY3RzXCI+eyRfKFwibmF2LmxpbmtUZXh0M1wiKX08L2FcbiAgICAgICAgPlxuICAgICAgPC9saT5cbiAgXG4gICAgICA8IS0tIGZvciB0aGUgYmxvZyBsaW5rLCB3ZSdyZSB1c2luZyByZWw9cHJlZmV0Y2ggc28gdGhhdCBTYXBwZXIgcHJlZmV0Y2hlc1xuICAgICAgICAgICB0aGUgYmxvZyBkYXRhIHdoZW4gd2UgaG92ZXIgb3ZlciB0aGUgbGluayBvciB0YXAgaXQgb24gYSB0b3VjaHNjcmVlbiAtLT5cbiAgICAgIDwhLS0gPGxpPlxuICAgICAgICA8YVxuICAgICAgICAgIHJlbD1cInByZWZldGNoXCJcbiAgICAgICAgICBhcmlhLWN1cnJlbnQ9e3NlZ21lbnQgPT09IFwiYmxvZ1wiID8gXCJwYWdlXCIgOiB1bmRlZmluZWR9XG4gICAgICAgICAgaHJlZj1cImJsb2dcIj5ibG9nPC9hXG4gICAgICAgICAgXG4gICAgICAgID5cbiAgICAgIDwvbGk+IC0tPlxuICAgIDwvdWw+XG4gIFxuICAgIDxMb2NhbGVTd2l0Y2hlclxuICAgICAgdmFsdWU9eyRsb2NhbGV9XG4gICAgICBvbjpsb2NhbGUtY2hhbmdlZD17KGUpID0+IHNldHVwSTE4bih7IHdpdGhMb2NhbGU6IGUuZGV0YWlsIH0pfVxuICAgIC8+XG4gIDwvZGl2PlxuIFxuPC9uYXY+XG5cbjxzdHlsZT5cbiAgbmF2IHtcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgcmdiYSgyNTUsIDYyLCAwLCAwLjEpO1xuICAgIGZvbnQtd2VpZ2h0OiAzMDA7XG4gICAgcGFkZGluZzogMCAxZW07XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6Y2VudGVyO1xuICB9XG5cbiAgdWwge1xuICAgIG1hcmdpbjogMDtcbiAgICBwYWRkaW5nOiAwO1xuICB9XG5cbiAgLyogY2xlYXJmaXggKi9cbiAgdWw6OmFmdGVyIHtcbiAgICBjb250ZW50OiBcIlwiO1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIGNsZWFyOiBib3RoO1xuICB9XG5cbiAgbGkge1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIGZsb2F0OiBsZWZ0O1xuICB9XG5cbiAgW2FyaWEtY3VycmVudF0ge1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICBbYXJpYS1jdXJyZW50XTo6YWZ0ZXIge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBjb250ZW50OiBcIlwiO1xuICAgIHdpZHRoOiBjYWxjKDEwMCUgLSAxZW0pO1xuICAgIGhlaWdodDogMnB4O1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDYyLCAwKTtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICBib3R0b206IC0xcHg7XG4gIH1cblxuICBuYXYgLmNvbnRlbnQtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDpzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOmNlbnRlcjtcbiAgfVxuXG4gIGEge1xuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICBwYWRkaW5nOiAxZW0gMC41ZW07XG4gICAgZGlzcGxheTogYmxvY2s7XG4gIH1cbjwvc3R5bGU+XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBK0NFLEdBQUcsOEJBQUMsQ0FBQyxBQUNILGFBQWEsQ0FBRSxHQUFHLENBQUMsS0FBSyxDQUFDLEtBQUssR0FBRyxDQUFDLENBQUMsRUFBRSxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQzlDLFdBQVcsQ0FBRSxHQUFHLENBQ2hCLE9BQU8sQ0FBRSxDQUFDLENBQUMsR0FBRyxDQUNkLE9BQU8sQ0FBRSxJQUFJLENBQ2IsZ0JBQWdCLE1BQU0sQUFDeEIsQ0FBQyxBQUVELEVBQUUsOEJBQUMsQ0FBQyxBQUNGLE1BQU0sQ0FBRSxDQUFDLENBQ1QsT0FBTyxDQUFFLENBQUMsQUFDWixDQUFDLEFBR0QsZ0NBQUUsT0FBTyxBQUFDLENBQUMsQUFDVCxPQUFPLENBQUUsRUFBRSxDQUNYLE9BQU8sQ0FBRSxLQUFLLENBQ2QsS0FBSyxDQUFFLElBQUksQUFDYixDQUFDLEFBRUQsRUFBRSw4QkFBQyxDQUFDLEFBQ0YsT0FBTyxDQUFFLEtBQUssQ0FDZCxLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMsQUFFRCxDQUFDLFlBQVksQ0FBQyw4QkFBQyxDQUFDLEFBQ2QsUUFBUSxDQUFFLFFBQVEsQ0FDbEIsT0FBTyxDQUFFLFlBQVksQUFDdkIsQ0FBQyxBQUVELENBQUMsWUFBWSwrQkFBQyxPQUFPLEFBQUMsQ0FBQyxBQUNyQixRQUFRLENBQUUsUUFBUSxDQUNsQixPQUFPLENBQUUsRUFBRSxDQUNYLEtBQUssQ0FBRSxLQUFLLElBQUksQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQ3ZCLE1BQU0sQ0FBRSxHQUFHLENBQ1gsZ0JBQWdCLENBQUUsSUFBSSxHQUFHLENBQUMsQ0FBQyxFQUFFLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FDakMsT0FBTyxDQUFFLEtBQUssQ0FDZCxNQUFNLENBQUUsSUFBSSxBQUNkLENBQUMsQUFFRCxrQkFBRyxDQUFDLGtCQUFrQixlQUFDLENBQUMsQUFDdEIsT0FBTyxDQUFFLElBQUksQ0FDYixnQkFBZ0IsYUFBYSxDQUM3QixZQUFZLE1BQU0sQUFDcEIsQ0FBQyxBQUVELENBQUMsOEJBQUMsQ0FBQyxBQUNELGVBQWUsQ0FBRSxJQUFJLENBQ3JCLE9BQU8sQ0FBRSxHQUFHLENBQUMsS0FBSyxDQUNsQixPQUFPLENBQUUsS0FBSyxBQUNoQixDQUFDIn0= */";
   append_dev(document.head, style);
 }
 
-function create_fragment$4(ctx) {
+function create_fragment$5(ctx) {
   var nav;
   var div;
   var ul;
@@ -21827,31 +21831,31 @@ function create_fragment$4(ctx) {
       ctx[0] === undefined ? "page" : undefined);
       attr_dev(a0, "href", ".");
       attr_dev(a0, "class", "svelte-1913wcy");
-      add_location(a0, file$3, 10, 8, 237);
+      add_location(a0, file$4, 10, 8, 237);
       attr_dev(li0, "class", "svelte-1913wcy");
-      add_location(li0, file$3, 9, 6, 224);
+      add_location(li0, file$4, 9, 6, 224);
       attr_dev(a1, "aria-current", a1_aria_current_value =
       /*segment*/
       ctx[0] === "about" ? "page" : undefined);
       attr_dev(a1, "href", "about");
       attr_dev(a1, "class", "svelte-1913wcy");
-      add_location(a1, file$3, 15, 8, 384);
+      add_location(a1, file$4, 15, 8, 384);
       attr_dev(li1, "class", "svelte-1913wcy");
-      add_location(li1, file$3, 14, 6, 371);
+      add_location(li1, file$4, 14, 6, 371);
       attr_dev(a2, "aria-current", a2_aria_current_value =
       /*segment*/
       ctx[0] === "contacts" ? "page" : undefined);
       attr_dev(a2, "href", "contacts");
       attr_dev(a2, "class", "svelte-1913wcy");
-      add_location(a2, file$3, 20, 8, 533);
+      add_location(a2, file$4, 20, 8, 533);
       attr_dev(li2, "class", "svelte-1913wcy");
-      add_location(li2, file$3, 19, 6, 520);
+      add_location(li2, file$4, 19, 6, 520);
       attr_dev(ul, "class", "svelte-1913wcy");
-      add_location(ul, file$3, 8, 4, 213);
+      add_location(ul, file$4, 8, 4, 213);
       attr_dev(div, "class", "content-container svelte-1913wcy");
-      add_location(div, file$3, 7, 2, 177);
+      add_location(div, file$4, 7, 2, 177);
       attr_dev(nav, "class", "svelte-1913wcy");
-      add_location(nav, file$3, 6, 0, 169);
+      add_location(nav, file$4, 6, 0, 169);
     },
     m: function mount(target, anchor) {
       insert_dev(target, nav, anchor);
@@ -21942,7 +21946,7 @@ function create_fragment$4(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$4.name,
+    id: create_fragment$5.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -21950,7 +21954,7 @@ function create_fragment$4(ctx) {
   return block;
 }
 
-function instance$4($$self, $$props, $$invalidate) {
+function instance$5($$self, $$props, $$invalidate) {
   var $_;
   var $locale;
   validate_store(ne, "_");
@@ -22007,7 +22011,7 @@ function instance$4($$self, $$props, $$invalidate) {
 var Nav = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(Nav, _SvelteComponentDev);
 
-  var _super = _createSuper$4(Nav);
+  var _super = _createSuper$5(Nav);
 
   function Nav(options) {
     var _this;
@@ -22015,15 +22019,15 @@ var Nav = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, Nav);
 
     _this = _super.call(this, options);
-    if (!document.getElementById("svelte-1913wcy-style")) add_css$3();
-    init$1(_assertThisInitialized(_this), options, instance$4, create_fragment$4, safe_not_equal, {
+    if (!document.getElementById("svelte-1913wcy-style")) add_css$4();
+    init$1(_assertThisInitialized(_this), options, instance$5, create_fragment$5, safe_not_equal, {
       segment: 0
     });
     dispatch_dev("SvelteRegisterComponent", {
       component: _assertThisInitialized(_this),
       tagName: "Nav",
       options: options,
-      id: create_fragment$4.name
+      id: create_fragment$5.name
     });
     var ctx = _this.$$.ctx;
     var props = options.props || {};
@@ -22050,19 +22054,19 @@ var Nav = /*#__PURE__*/function (_SvelteComponentDev) {
   return Nav;
 }(SvelteComponentDev);
 
-function _createSuper$3(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$3(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$4(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$4(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$3() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-var file$2 = "src/components/Footer.svelte";
+function _isNativeReflectConstruct$4() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+var file$3 = "src/components/Footer.svelte";
 
-function add_css$2() {
+function add_css$3() {
   var style = element("style");
   style.id = "svelte-1r2xji3-style";
   style.textContent = "footer.svelte-1r2xji3.svelte-1r2xji3{font-weight:300;padding:0 1em;position:fixed;bottom:0px;height:50px;border-top:1px solid rgba(255, 62, 0, 0.1);width:calc(100% - 2em);z-index:1000;background:white;display:flex;justify-content:center;align-items:center}.copyright.svelte-1r2xji3.svelte-1r2xji3{display:flex;align-items:center}.content-container.svelte-1r2xji3.svelte-1r2xji3{display:flex}.footer-contacts.svelte-1r2xji3.svelte-1r2xji3{display:flex;align-items:center}.footer-contacts.svelte-1r2xji3 a.svelte-1r2xji3,.copyright.svelte-1r2xji3.svelte-1r2xji3{font-size:16px;padding:15px}@media(max-width: 400px){.footer-contacts.svelte-1r2xji3 a.svelte-1r2xji3,.copyright.svelte-1r2xji3.svelte-1r2xji3{font-size:12px;padding:1em 0.5em}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRm9vdGVyLnN2ZWx0ZSIsInNvdXJjZXMiOlsiRm9vdGVyLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICAvLyBleHBvcnQgbGV0IHNlZ21lbnQ7XG4gIGltcG9ydCB7IF8sIGxvY2FsZSwgc2V0dXBJMThuIH0gZnJvbSBcIi4uL3NlcnZpY2VzL2kxOG5cIjtcbiAgbGV0IHllYXIgPSBuZXcgRGF0ZSgpLmdldEZ1bGxZZWFyKCk7XG48L3NjcmlwdD5cblxuPGZvb3Rlcj5cbiAgPGRpdiBjbGFzcz1cImNvbnRlbnQtY29udGFpbmVyXCI+XG4gICAgPGRpdiBjbGFzcz1cImNvcHlyaWdodFwiPlxuICAgICAgJiMxNjk7IHt5ZWFyfVxuICAgIDwvZGl2PlxuICAgIDxkaXYgY2xhc3M9XCJmb290ZXItY29udGFjdHNcIj5cbiAgICAgIDxhIGhyZWY9XCJtYWlsdG86eyRfKCdmb290ZXIuZW1haWwnKX0gXCI+eyRfKCdmb290ZXIuZW1haWwnKX0gPC9hPlxuICAgICAgPGEgaHJlZj1cImNhbGx0bzp7JF8oJ2Zvb3Rlci5waG9uZScpfVwiPnskXygnZm9vdGVyLnBob25lVG9BcHBlYXInKX08L2E+XG4gICAgPC9kaXY+XG4gICAgPGRpdj5cbiAgICAgIFxuICAgIDwvZGl2PlxuICAgIFxuICAgIDwhLS0ge3NlZ21lbnR9IC0tPlxuICAgIDwhLS0geyRfKFwiZm9vdGVyLmNvbnRhY3RzXCIpfSAtLT5cbiAgPC9kaXY+XG5cblxuXG48L2Zvb3Rlcj5cblxuPHN0eWxlPlxuICBmb290ZXIge1xuICAgIGZvbnQtd2VpZ2h0OiAzMDA7XG4gICAgcGFkZGluZzogMCAxZW07XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogMHB4O1xuICAgIGhlaWdodDogNTBweDtcbiAgICBib3JkZXItdG9wOiAxcHggc29saWQgcmdiYSgyNTUsIDYyLCAwLCAwLjEpO1xuICAgIHdpZHRoOiBjYWxjKDEwMCUgLSAyZW0pO1xuICAgIHotaW5kZXg6IDEwMDA7XG4gICAgYmFja2dyb3VuZDogd2hpdGU7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6Y2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOmNlbnRlcjtcbiAgfVxuXG4gIC5jb3B5cmlnaHQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6Y2VudGVyO1xuICB9XG4gIC5jb250ZW50LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgfVxuXG4gIC5mb290ZXItY29udGFjdHMge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgfVxuXG4gIC5mb290ZXItY29udGFjdHMgYSwgLmNvcHlyaWdodCB7XG4gICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICBwYWRkaW5nOiAxNXB4O1xuICB9XG5cbiAgQG1lZGlhIChtYXgtd2lkdGg6IDQwMHB4KSB7XG4gICAgLmZvb3Rlci1jb250YWN0cyBhLCAuY29weXJpZ2h0IHtcbiAgICAgIGZvbnQtc2l6ZTogMTJweDtcbiAgICAgIHBhZGRpbmc6IDFlbSAwLjVlbTtcbiAgICB9XG5cbiAgfSBcbjwvc3R5bGU+XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBNEJFLE1BQU0sOEJBQUMsQ0FBQyxBQUNOLFdBQVcsQ0FBRSxHQUFHLENBQ2hCLE9BQU8sQ0FBRSxDQUFDLENBQUMsR0FBRyxDQUNkLFFBQVEsQ0FBRSxLQUFLLENBQ2YsTUFBTSxDQUFFLEdBQUcsQ0FDWCxNQUFNLENBQUUsSUFBSSxDQUNaLFVBQVUsQ0FBRSxHQUFHLENBQUMsS0FBSyxDQUFDLEtBQUssR0FBRyxDQUFDLENBQUMsRUFBRSxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQzNDLEtBQUssQ0FBRSxLQUFLLElBQUksQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQ3ZCLE9BQU8sQ0FBRSxJQUFJLENBQ2IsVUFBVSxDQUFFLEtBQUssQ0FDakIsT0FBTyxDQUFFLElBQUksQ0FDYixnQkFBZ0IsTUFBTSxDQUN0QixZQUFZLE1BQU0sQUFDcEIsQ0FBQyxBQUVELFVBQVUsOEJBQUMsQ0FBQyxBQUNWLE9BQU8sQ0FBRSxJQUFJLENBQ2IsWUFBWSxNQUFNLEFBQ3BCLENBQUMsQUFDRCxrQkFBa0IsOEJBQUMsQ0FBQyxBQUNsQixPQUFPLENBQUUsSUFBSSxBQUNmLENBQUMsQUFFRCxnQkFBZ0IsOEJBQUMsQ0FBQyxBQUNoQixPQUFPLENBQUUsSUFBSSxDQUNiLFdBQVcsQ0FBRSxNQUFNLEFBQ3JCLENBQUMsQUFFRCwrQkFBZ0IsQ0FBQyxnQkFBQyxDQUFFLFVBQVUsOEJBQUMsQ0FBQyxBQUM1QixTQUFTLENBQUUsSUFBSSxDQUNmLE9BQU8sQ0FBRSxJQUFJLEFBQ2pCLENBQUMsQUFFRCxNQUFNLEFBQUMsWUFBWSxLQUFLLENBQUMsQUFBQyxDQUFDLEFBQ3pCLCtCQUFnQixDQUFDLGdCQUFDLENBQUUsVUFBVSw4QkFBQyxDQUFDLEFBQzlCLFNBQVMsQ0FBRSxJQUFJLENBQ2YsT0FBTyxDQUFFLEdBQUcsQ0FBQyxLQUFLLEFBQ3BCLENBQUMsQUFFSCxDQUFDIn0= */";
   append_dev(document.head, style);
 }
 
-function create_fragment$3(ctx) {
+function create_fragment$4(ctx) {
   var footer;
   var div3;
   var div0;
@@ -22154,24 +22158,24 @@ function create_fragment$3(ctx) {
     },
     h: function hydrate() {
       attr_dev(div0, "class", "copyright svelte-1r2xji3");
-      add_location(div0, file$2, 8, 4, 190);
+      add_location(div0, file$3, 8, 4, 190);
       attr_dev(a0, "href", a0_href_value = "mailto:" +
       /*$_*/
       ctx[0]("footer.email") + " ");
       attr_dev(a0, "class", "svelte-1r2xji3");
-      add_location(a0, file$2, 12, 6, 285);
+      add_location(a0, file$3, 12, 6, 285);
       attr_dev(a1, "href", a1_href_value = "callto:" +
       /*$_*/
       ctx[0]("footer.phone"));
       attr_dev(a1, "class", "svelte-1r2xji3");
-      add_location(a1, file$2, 13, 6, 356);
+      add_location(a1, file$3, 13, 6, 356);
       attr_dev(div1, "class", "footer-contacts svelte-1r2xji3");
-      add_location(div1, file$2, 11, 4, 249);
-      add_location(div2, file$2, 15, 4, 442);
+      add_location(div1, file$3, 11, 4, 249);
+      add_location(div2, file$3, 15, 4, 442);
       attr_dev(div3, "class", "content-container svelte-1r2xji3");
-      add_location(div3, file$2, 7, 2, 154);
+      add_location(div3, file$3, 7, 2, 154);
       attr_dev(footer, "class", "svelte-1r2xji3");
-      add_location(footer, file$2, 6, 0, 143);
+      add_location(footer, file$3, 6, 0, 143);
     },
     m: function mount(target, anchor) {
       insert_dev(target, footer, anchor);
@@ -22229,7 +22233,7 @@ function create_fragment$3(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$3.name,
+    id: create_fragment$4.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -22237,7 +22241,7 @@ function create_fragment$3(ctx) {
   return block;
 }
 
-function instance$3($$self, $$props, $$invalidate) {
+function instance$4($$self, $$props, $$invalidate) {
   var $_;
   validate_store(ne, "_");
   component_subscribe($$self, ne, function ($$value) {
@@ -22277,7 +22281,7 @@ function instance$3($$self, $$props, $$invalidate) {
 var Footer = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(Footer, _SvelteComponentDev);
 
-  var _super = _createSuper$3(Footer);
+  var _super = _createSuper$4(Footer);
 
   function Footer(options) {
     var _this;
@@ -22285,18 +22289,327 @@ var Footer = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, Footer);
 
     _this = _super.call(this, options);
-    if (!document.getElementById("svelte-1r2xji3-style")) add_css$2();
-    init$1(_assertThisInitialized(_this), options, instance$3, create_fragment$3, safe_not_equal, {});
+    if (!document.getElementById("svelte-1r2xji3-style")) add_css$3();
+    init$1(_assertThisInitialized(_this), options, instance$4, create_fragment$4, safe_not_equal, {});
     dispatch_dev("SvelteRegisterComponent", {
       component: _assertThisInitialized(_this),
       tagName: "Footer",
+      options: options,
+      id: create_fragment$4.name
+    });
+    return _this;
+  }
+
+  return Footer;
+}(SvelteComponentDev);
+
+var range = function range(size) {
+  var startAt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+  return _toConsumableArray(Array(size).keys()).map(function (i) {
+    return i + startAt;
+  });
+};
+
+function _createSuper$3(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$3(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _isNativeReflectConstruct$3() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+var file$2 = "node_modules/svelte-loading-spinners/src/RingLoader.svelte";
+
+function add_css$2() {
+  var style = element("style");
+  style.id = "svelte-17ey38u-style";
+  style.textContent = ".wrapper.svelte-17ey38u{position:relative;width:var(--size);height:var(--size)}.border.svelte-17ey38u{border-color:var(--color);position:absolute;top:0px;left:0px;width:var(--size);height:var(--size);opacity:0.4;perspective:800px;border-width:6px;border-style:solid;border-image:initial;border-radius:100%}.border.\\31 .svelte-17ey38u{animation:var(--duration) linear 0s infinite normal none running svelte-17ey38u-ringOne}.border.\\32 .svelte-17ey38u{animation:var(--duration) linear 0s infinite normal none running svelte-17ey38u-ringTwo}@keyframes svelte-17ey38u-ringOne{0%{transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg)}100%{transform:rotateX(360deg) rotateY(180deg) rotateZ(360deg)}}@keyframes svelte-17ey38u-ringTwo{0%{transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg)}100%{transform:rotateX(180deg) rotateY(360deg) rotateZ(360deg)}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmluZ0xvYWRlci5zdmVsdGUiLCJzb3VyY2VzIjpbIlJpbmdMb2FkZXIuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgcmFuZ2UgfSBmcm9tIFwiLi91dGlsc1wiO1xyXG4gIGV4cG9ydCBsZXQgc2l6ZSA9IDYwO1xyXG4gIGV4cG9ydCBsZXQgY29sb3IgPSBcIiNGRjNFMDBcIjtcclxuICBleHBvcnQgbGV0IHVuaXQgPSBcInB4XCI7XHJcbiAgZXhwb3J0IGxldCBkdXJhdGlvbiA9IFwiMnNcIjtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLndyYXBwZXIge1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgd2lkdGg6IHZhcigtLXNpemUpO1xyXG4gICAgaGVpZ2h0OiB2YXIoLS1zaXplKTtcclxuICB9XHJcbiAgLmJvcmRlciB7XHJcbiAgICBib3JkZXItY29sb3I6IHZhcigtLWNvbG9yKTtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogMHB4O1xyXG4gICAgbGVmdDogMHB4O1xyXG4gICAgd2lkdGg6IHZhcigtLXNpemUpO1xyXG4gICAgaGVpZ2h0OiB2YXIoLS1zaXplKTtcclxuICAgIG9wYWNpdHk6IDAuNDtcclxuICAgIHBlcnNwZWN0aXZlOiA4MDBweDtcclxuICAgIGJvcmRlci13aWR0aDogNnB4O1xyXG4gICAgYm9yZGVyLXN0eWxlOiBzb2xpZDtcclxuICAgIGJvcmRlci1pbWFnZTogaW5pdGlhbDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDEwMCU7XHJcbiAgfVxyXG4gIC5ib3JkZXIuXFwzMSB7XHJcbiAgICBhbmltYXRpb246IHZhcigtLWR1cmF0aW9uKSBsaW5lYXIgMHMgaW5maW5pdGUgbm9ybWFsIG5vbmUgcnVubmluZyByaW5nT25lO1xyXG4gIH1cclxuICAuYm9yZGVyLlxcMzIge1xyXG4gICAgYW5pbWF0aW9uOiB2YXIoLS1kdXJhdGlvbikgbGluZWFyIDBzIGluZmluaXRlIG5vcm1hbCBub25lIHJ1bm5pbmcgcmluZ1R3bztcclxuICB9XHJcblxyXG4gIEBrZXlmcmFtZXMgcmluZ09uZSB7XHJcbiAgICAwJSB7XHJcbiAgICAgIHRyYW5zZm9ybTogcm90YXRlWCgwZGVnKSByb3RhdGVZKDBkZWcpIHJvdGF0ZVooMGRlZyk7XHJcbiAgICB9XHJcbiAgICAxMDAlIHtcclxuICAgICAgdHJhbnNmb3JtOiByb3RhdGVYKDM2MGRlZykgcm90YXRlWSgxODBkZWcpIHJvdGF0ZVooMzYwZGVnKTtcclxuICAgIH1cclxuICB9XHJcbiAgQGtleWZyYW1lcyByaW5nVHdvIHtcclxuICAgIDAlIHtcclxuICAgICAgdHJhbnNmb3JtOiByb3RhdGVYKDBkZWcpIHJvdGF0ZVkoMGRlZykgcm90YXRlWigwZGVnKTtcclxuICAgIH1cclxuICAgIDEwMCUge1xyXG4gICAgICB0cmFuc2Zvcm06IHJvdGF0ZVgoMTgwZGVnKSByb3RhdGVZKDM2MGRlZykgcm90YXRlWigzNjBkZWcpO1xyXG4gICAgfVxyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxkaXYgY2xhc3M9XCJ3cmFwcGVyXCIgc3R5bGU9XCItLXNpemU6IHtzaXplfXt1bml0fTsgLS1jb2xvcjoge2NvbG9yfTsgLS1kdXJhdGlvbjoge2R1cmF0aW9ufTtcIj5cclxuICB7I2VhY2ggcmFuZ2UoMiwgMSkgYXMgdmVyc2lvbn1cclxuICA8ZGl2IGNsYXNzPVwiYm9yZGVyIHt2ZXJzaW9ufVwiPjwvZGl2PlxyXG4gIHsvZWFjaH1cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFTRSxRQUFRLGVBQUMsQ0FBQyxBQUNSLFFBQVEsQ0FBRSxRQUFRLENBQ2xCLEtBQUssQ0FBRSxJQUFJLE1BQU0sQ0FBQyxDQUNsQixNQUFNLENBQUUsSUFBSSxNQUFNLENBQUMsQUFDckIsQ0FBQyxBQUNELE9BQU8sZUFBQyxDQUFDLEFBQ1AsWUFBWSxDQUFFLElBQUksT0FBTyxDQUFDLENBQzFCLFFBQVEsQ0FBRSxRQUFRLENBQ2xCLEdBQUcsQ0FBRSxHQUFHLENBQ1IsSUFBSSxDQUFFLEdBQUcsQ0FDVCxLQUFLLENBQUUsSUFBSSxNQUFNLENBQUMsQ0FDbEIsTUFBTSxDQUFFLElBQUksTUFBTSxDQUFDLENBQ25CLE9BQU8sQ0FBRSxHQUFHLENBQ1osV0FBVyxDQUFFLEtBQUssQ0FDbEIsWUFBWSxDQUFFLEdBQUcsQ0FDakIsWUFBWSxDQUFFLEtBQUssQ0FDbkIsWUFBWSxDQUFFLE9BQU8sQ0FDckIsYUFBYSxDQUFFLElBQUksQUFDckIsQ0FBQyxBQUNELE9BQU8sb0JBQUssQ0FBQyxBQUNYLFNBQVMsQ0FBRSxJQUFJLFVBQVUsQ0FBQyxDQUFDLE1BQU0sQ0FBQyxFQUFFLENBQUMsUUFBUSxDQUFDLE1BQU0sQ0FBQyxJQUFJLENBQUMsT0FBTyxDQUFDLHNCQUNwRSxDQUFDLEFBQ0QsT0FBTyxvQkFBSyxDQUFDLEFBQ1gsU0FBUyxDQUFFLElBQUksVUFBVSxDQUFDLENBQUMsTUFBTSxDQUFDLEVBQUUsQ0FBQyxRQUFRLENBQUMsTUFBTSxDQUFDLElBQUksQ0FBQyxPQUFPLENBQUMsc0JBQ3BFLENBQUMsQUFFRCxXQUFXLHNCQUFRLENBQUMsQUFDbEIsRUFBRSxBQUFDLENBQUMsQUFDRixTQUFTLENBQUUsUUFBUSxJQUFJLENBQUMsQ0FBQyxRQUFRLElBQUksQ0FBQyxDQUFDLFFBQVEsSUFBSSxDQUFDLEFBQ3RELENBQUMsQUFDRCxJQUFJLEFBQUMsQ0FBQyxBQUNKLFNBQVMsQ0FBRSxRQUFRLE1BQU0sQ0FBQyxDQUFDLFFBQVEsTUFBTSxDQUFDLENBQUMsUUFBUSxNQUFNLENBQUMsQUFDNUQsQ0FBQyxBQUNILENBQUMsQUFDRCxXQUFXLHNCQUFRLENBQUMsQUFDbEIsRUFBRSxBQUFDLENBQUMsQUFDRixTQUFTLENBQUUsUUFBUSxJQUFJLENBQUMsQ0FBQyxRQUFRLElBQUksQ0FBQyxDQUFDLFFBQVEsSUFBSSxDQUFDLEFBQ3RELENBQUMsQUFDRCxJQUFJLEFBQUMsQ0FBQyxBQUNKLFNBQVMsQ0FBRSxRQUFRLE1BQU0sQ0FBQyxDQUFDLFFBQVEsTUFBTSxDQUFDLENBQUMsUUFBUSxNQUFNLENBQUMsQUFDNUQsQ0FBQyxBQUNILENBQUMifQ== */";
+  append_dev(document.head, style);
+}
+
+function get_each_context(ctx, list, i) {
+  var child_ctx = ctx.slice();
+  child_ctx[4] = list[i];
+  return child_ctx;
+} // (55:2) {#each range(2, 1) as version}
+
+
+function create_each_block(ctx) {
+  var div;
+  var block = {
+    c: function create() {
+      div = element("div");
+      this.h();
+    },
+    l: function claim(nodes) {
+      div = claim_element(nodes, "DIV", {
+        class: true
+      });
+      children(div).forEach(detach_dev);
+      this.h();
+    },
+    h: function hydrate() {
+      attr_dev(div, "class", "border " +
+      /*version*/
+      ctx[4] + " svelte-17ey38u");
+      add_location(div, file$2, 55, 2, 1320);
+    },
+    m: function mount(target, anchor) {
+      insert_dev(target, div, anchor);
+    },
+    p: noop,
+    d: function destroy(detaching) {
+      if (detaching) detach_dev(div);
+    }
+  };
+  dispatch_dev("SvelteRegisterBlock", {
+    block: block,
+    id: create_each_block.name,
+    type: "each",
+    source: "(55:2) {#each range(2, 1) as version}",
+    ctx: ctx
+  });
+  return block;
+}
+
+function create_fragment$3(ctx) {
+  var div;
+  var each_value = range(2, 1);
+  validate_each_argument(each_value);
+  var each_blocks = [];
+
+  for (var i = 0; i < each_value.length; i += 1) {
+    each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+  }
+
+  var block = {
+    c: function create() {
+      div = element("div");
+
+      for (var _i = 0; _i < each_blocks.length; _i += 1) {
+        each_blocks[_i].c();
+      }
+
+      this.h();
+    },
+    l: function claim(nodes) {
+      div = claim_element(nodes, "DIV", {
+        class: true,
+        style: true
+      });
+      var div_nodes = children(div);
+
+      for (var _i2 = 0; _i2 < each_blocks.length; _i2 += 1) {
+        each_blocks[_i2].l(div_nodes);
+      }
+
+      div_nodes.forEach(detach_dev);
+      this.h();
+    },
+    h: function hydrate() {
+      attr_dev(div, "class", "wrapper svelte-17ey38u");
+      set_style(div, "--size",
+      /*size*/
+      ctx[0] +
+      /*unit*/
+      ctx[2]);
+      set_style(div, "--color",
+      /*color*/
+      ctx[1]);
+      set_style(div, "--duration",
+      /*duration*/
+      ctx[3]);
+      add_location(div, file$2, 53, 0, 1189);
+    },
+    m: function mount(target, anchor) {
+      insert_dev(target, div, anchor);
+
+      for (var _i3 = 0; _i3 < each_blocks.length; _i3 += 1) {
+        each_blocks[_i3].m(div, null);
+      }
+    },
+    p: function update(ctx, _ref) {
+      var _ref2 = _slicedToArray(_ref, 1),
+          dirty = _ref2[0];
+
+      if (dirty &
+      /*range*/
+      0) {
+        each_value = range(2, 1);
+        validate_each_argument(each_value);
+
+        var _i4;
+
+        for (_i4 = 0; _i4 < each_value.length; _i4 += 1) {
+          var child_ctx = get_each_context(ctx, each_value, _i4);
+
+          if (each_blocks[_i4]) {
+            each_blocks[_i4].p(child_ctx, dirty);
+          } else {
+            each_blocks[_i4] = create_each_block(child_ctx);
+
+            each_blocks[_i4].c();
+
+            each_blocks[_i4].m(div, null);
+          }
+        }
+
+        for (; _i4 < each_blocks.length; _i4 += 1) {
+          each_blocks[_i4].d(1);
+        }
+
+        each_blocks.length = each_value.length;
+      }
+
+      if (dirty &
+      /*size, unit*/
+      5) {
+        set_style(div, "--size",
+        /*size*/
+        ctx[0] +
+        /*unit*/
+        ctx[2]);
+      }
+
+      if (dirty &
+      /*color*/
+      2) {
+        set_style(div, "--color",
+        /*color*/
+        ctx[1]);
+      }
+
+      if (dirty &
+      /*duration*/
+      8) {
+        set_style(div, "--duration",
+        /*duration*/
+        ctx[3]);
+      }
+    },
+    i: noop,
+    o: noop,
+    d: function destroy(detaching) {
+      if (detaching) detach_dev(div);
+      destroy_each(each_blocks, detaching);
+    }
+  };
+  dispatch_dev("SvelteRegisterBlock", {
+    block: block,
+    id: create_fragment$3.name,
+    type: "component",
+    source: "",
+    ctx: ctx
+  });
+  return block;
+}
+
+function instance$3($$self, $$props, $$invalidate) {
+  var _$$props$$$slots = $$props.$$slots,
+      slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots;
+      $$props.$$scope;
+  validate_slots("RingLoader", slots, []);
+  var _$$props$size = $$props.size,
+      size = _$$props$size === void 0 ? 60 : _$$props$size;
+  var _$$props$color = $$props.color,
+      color = _$$props$color === void 0 ? "#FF3E00" : _$$props$color;
+  var _$$props$unit = $$props.unit,
+      unit = _$$props$unit === void 0 ? "px" : _$$props$unit;
+  var _$$props$duration = $$props.duration,
+      duration = _$$props$duration === void 0 ? "2s" : _$$props$duration;
+  var writable_props = ["size", "color", "unit", "duration"];
+  Object.keys($$props).forEach(function (key) {
+    if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn("<RingLoader> was created with unknown prop '".concat(key, "'"));
+  });
+
+  $$self.$$set = function ($$props) {
+    if ("size" in $$props) $$invalidate(0, size = $$props.size);
+    if ("color" in $$props) $$invalidate(1, color = $$props.color);
+    if ("unit" in $$props) $$invalidate(2, unit = $$props.unit);
+    if ("duration" in $$props) $$invalidate(3, duration = $$props.duration);
+  };
+
+  $$self.$capture_state = function () {
+    return {
+      range: range,
+      size: size,
+      color: color,
+      unit: unit,
+      duration: duration
+    };
+  };
+
+  $$self.$inject_state = function ($$props) {
+    if ("size" in $$props) $$invalidate(0, size = $$props.size);
+    if ("color" in $$props) $$invalidate(1, color = $$props.color);
+    if ("unit" in $$props) $$invalidate(2, unit = $$props.unit);
+    if ("duration" in $$props) $$invalidate(3, duration = $$props.duration);
+  };
+
+  if ($$props && "$$inject" in $$props) {
+    $$self.$inject_state($$props.$$inject);
+  }
+
+  return [size, color, unit, duration];
+}
+
+var RingLoader = /*#__PURE__*/function (_SvelteComponentDev) {
+  _inherits(RingLoader, _SvelteComponentDev);
+
+  var _super = _createSuper$3(RingLoader);
+
+  function RingLoader(options) {
+    var _this;
+
+    _classCallCheck(this, RingLoader);
+
+    _this = _super.call(this, options);
+    if (!document.getElementById("svelte-17ey38u-style")) add_css$2();
+    init$1(_assertThisInitialized(_this), options, instance$3, create_fragment$3, safe_not_equal, {
+      size: 0,
+      color: 1,
+      unit: 2,
+      duration: 3
+    });
+    dispatch_dev("SvelteRegisterComponent", {
+      component: _assertThisInitialized(_this),
+      tagName: "RingLoader",
       options: options,
       id: create_fragment$3.name
     });
     return _this;
   }
 
-  return Footer;
+  _createClass(RingLoader, [{
+    key: "size",
+    get: function get() {
+      throw new Error("<RingLoader>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    },
+    set: function set(value) {
+      throw new Error("<RingLoader>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    }
+  }, {
+    key: "color",
+    get: function get() {
+      throw new Error("<RingLoader>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    },
+    set: function set(value) {
+      throw new Error("<RingLoader>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    }
+  }, {
+    key: "unit",
+    get: function get() {
+      throw new Error("<RingLoader>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    },
+    set: function set(value) {
+      throw new Error("<RingLoader>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    }
+  }, {
+    key: "duration",
+    get: function get() {
+      throw new Error("<RingLoader>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    },
+    set: function set(value) {
+      throw new Error("<RingLoader>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    }
+  }]);
+
+  return RingLoader;
 }(SvelteComponentDev);
 
 function _createSuper$2(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$2(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
@@ -22307,18 +22620,30 @@ var file$1 = "src/routes/_layout.svelte";
 function add_css$1() {
   var style = element("style");
   style.id = "svelte-n70g7x-style";
-  style.textContent = "main.svelte-n70g7x.svelte-n70g7x{position:relative;max-width:56em;background-color:white;padding:2em;margin:0 auto;box-sizing:border-box}.loader-container.svelte-n70g7x.svelte-n70g7x{width:100vw;height:100vh;z-index:100000;background-color:white;display:flex;align-items:center;justify-content:center}.loader-container.svelte-n70g7x div.svelte-n70g7x{margin:0 auto;height:100px;width:100px}.content-container{max-width:1300px;width:100%}.main-content-container{margin-bottom:50px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiX2xheW91dC5zdmVsdGUiLCJzb3VyY2VzIjpbIl9sYXlvdXQuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XG4gIGltcG9ydCBOYXYgZnJvbSBcIi4uL2NvbXBvbmVudHMvTmF2LnN2ZWx0ZVwiO1xuICBpbXBvcnQgRm9vdGVyIGZyb20gXCIuLi9jb21wb25lbnRzL0Zvb3Rlci5zdmVsdGVcIjtcbiAgLy8gaW1wb3J0IHsgUmluZ0xvYWRlciB9IGZyb20gJy4uLy4uL25vZGVfbW9kdWxlcy9zdmVsdGUtbG9hZGluZy1zcGlubmVycy9zcmMvaW5kZXgnO1xuICAvLyBpbXBvcnQgeyBSaW5nTG9hZGVyIH0gZnJvbSAnLi4vLi4vbm9kZV9tb2R1bGVzL3N2ZWx0ZS1sb2FkaW5nLXNwaW5uZXJzL3NyYy9pbmRleCc7XG5cbiAgZXhwb3J0IGxldCBzZWdtZW50O1xuIFxuICBpbXBvcnQgeyBzZXR1cEkxOG4sIGlzTG9jYWxlTG9hZGVkIH0gZnJvbSBcIi4uL3NlcnZpY2VzL2kxOG5cIjtcbiAgc2V0dXBJMThuKHsgd2l0aExvY2FsZTogXCJsdFwiIH0pO1xuPC9zY3JpcHQ+XG5cblxuXG5cbiAgeyNpZiAkaXNMb2NhbGVMb2FkZWR9XG4gICAgPE5hdiB7c2VnbWVudH0gLz5cbiAgICA8bWFpbj5cbiAgICAgIDxkaXYgY2xhc3M9XCJjb250ZW50LWNvbnRhaW5lciBtYWluLWNvbnRlbnQtY29udGFpbmVyXCI+XG4gICAgICAgIDxzbG90IC8+XG4gICAgICA8L2Rpdj5cbiAgICA8L21haW4+XG4gICAgPEZvb3RlciAvPlxuICB7OmVsc2V9XG4gICAgPGRpdiBjbGFzcz1cImxvYWRlci1jb250YWluZXJcIj5cbiAgICAgIDxkaXY+XG4gICAgICAgIDwhLS0gPFJpbmdMb2FkZXIgc2l6ZT1cIjEwMFwiIGNvbG9yPVwiI0ZGM0UwMFwiIHVuaXQ9XCJweFwiIGR1cmF0aW9uPVwiNXNcIj48L1JpbmdMb2FkZXI+IC0tPlxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gIHsvaWZ9XG4gIFxuXG5cbjxzdHlsZSA+XG4gIG1haW4ge1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICBtYXgtd2lkdGg6IDU2ZW07XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgcGFkZGluZzogMmVtO1xuICAgIG1hcmdpbjogMCBhdXRvO1xuICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gIH1cbiAgLmxvYWRlci1jb250YWluZXIge1xuICAgIHdpZHRoOiAxMDB2dztcbiAgICBoZWlnaHQ6IDEwMHZoO1xuICAgIHotaW5kZXg6IDEwMDAwMDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOmNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgfVxuXG4gIC5sb2FkZXItY29udGFpbmVyIGRpdiB7XG4gICAgICBtYXJnaW46IDAgYXV0bztcbiAgICAgIGhlaWdodDogMTAwcHg7XG4gICAgICB3aWR0aDogMTAwcHg7XG4gICAgfVxuXG4gIDpnbG9iYWwoLmNvbnRlbnQtY29udGFpbmVyKSB7XG4gICAgbWF4LXdpZHRoOiAxMzAwcHg7XG4gICAgd2lkdGg6IDEwMCU7XG4gIH1cblxuICA6Z2xvYmFsKC5tYWluLWNvbnRlbnQtY29udGFpbmVyKSB7XG5cdG1hcmdpbi1ib3R0b206IDUwcHg7XG4gIH1cblxuPC9zdHlsZT5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFrQ0UsSUFBSSw0QkFBQyxDQUFDLEFBQ0osUUFBUSxDQUFFLFFBQVEsQ0FDbEIsU0FBUyxDQUFFLElBQUksQ0FDZixnQkFBZ0IsQ0FBRSxLQUFLLENBQ3ZCLE9BQU8sQ0FBRSxHQUFHLENBQ1osTUFBTSxDQUFFLENBQUMsQ0FBQyxJQUFJLENBQ2QsVUFBVSxDQUFFLFVBQVUsQUFDeEIsQ0FBQyxBQUNELGlCQUFpQiw0QkFBQyxDQUFDLEFBQ2pCLEtBQUssQ0FBRSxLQUFLLENBQ1osTUFBTSxDQUFFLEtBQUssQ0FDYixPQUFPLENBQUUsTUFBTSxDQUNmLGdCQUFnQixDQUFFLEtBQUssQ0FDdkIsT0FBTyxDQUFFLElBQUksQ0FDYixZQUFZLE1BQU0sQ0FDbEIsZUFBZSxDQUFFLE1BQU0sQUFDekIsQ0FBQyxBQUVELCtCQUFpQixDQUFDLEdBQUcsY0FBQyxDQUFDLEFBQ25CLE1BQU0sQ0FBRSxDQUFDLENBQUMsSUFBSSxDQUNkLE1BQU0sQ0FBRSxLQUFLLENBQ2IsS0FBSyxDQUFFLEtBQUssQUFDZCxDQUFDLEFBRUssa0JBQWtCLEFBQUUsQ0FBQyxBQUMzQixTQUFTLENBQUUsTUFBTSxDQUNqQixLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMsQUFFTyx1QkFBdUIsQUFBRSxDQUFDLEFBQ25DLGFBQWEsQ0FBRSxJQUFJLEFBQ2xCLENBQUMifQ== */";
+  style.textContent = "main.svelte-n70g7x.svelte-n70g7x{position:relative;max-width:56em;background-color:white;padding:2em;margin:0 auto;box-sizing:border-box}.loader-container.svelte-n70g7x.svelte-n70g7x{width:100vw;height:100vh;z-index:100000;background-color:white;display:flex;align-items:center;justify-content:center}.loader-container.svelte-n70g7x div.svelte-n70g7x{margin:0 auto;height:100px;width:100px}.content-container{max-width:1300px;width:100%}.main-content-container{margin-bottom:50px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiX2xheW91dC5zdmVsdGUiLCJzb3VyY2VzIjpbIl9sYXlvdXQuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XG4gIGltcG9ydCBOYXYgZnJvbSBcIi4uL2NvbXBvbmVudHMvTmF2LnN2ZWx0ZVwiO1xuICBpbXBvcnQgRm9vdGVyIGZyb20gXCIuLi9jb21wb25lbnRzL0Zvb3Rlci5zdmVsdGVcIjtcbiAgaW1wb3J0IHsgUmluZ0xvYWRlciB9IGZyb20gJy4uLy4uL25vZGVfbW9kdWxlcy9zdmVsdGUtbG9hZGluZy1zcGlubmVycy9zcmMvaW5kZXgnO1xuXG4gIGV4cG9ydCBsZXQgc2VnbWVudDtcbiBcbiAgaW1wb3J0IHsgc2V0dXBJMThuLCBpc0xvY2FsZUxvYWRlZCB9IGZyb20gXCIuLi9zZXJ2aWNlcy9pMThuXCI7XG4gIHNldHVwSTE4bih7IHdpdGhMb2NhbGU6IFwibHRcIiB9KTtcbjwvc2NyaXB0PlxuXG5cblxuXG4gIHsjaWYgJGlzTG9jYWxlTG9hZGVkfVxuICAgIDxOYXYge3NlZ21lbnR9IC8+XG4gICAgPG1haW4+XG4gICAgICA8ZGl2IGNsYXNzPVwiY29udGVudC1jb250YWluZXIgbWFpbi1jb250ZW50LWNvbnRhaW5lclwiPlxuICAgICAgICA8c2xvdCAvPlxuICAgICAgPC9kaXY+XG4gICAgPC9tYWluPlxuICAgIDxGb290ZXIgLz5cbiAgezplbHNlfVxuICAgIDxkaXYgY2xhc3M9XCJsb2FkZXItY29udGFpbmVyXCI+XG4gICAgICA8ZGl2PlxuICAgICAgICA8UmluZ0xvYWRlciBzaXplPVwiMTAwXCIgY29sb3I9XCIjRkYzRTAwXCIgdW5pdD1cInB4XCIgZHVyYXRpb249XCI1c1wiPjwvUmluZ0xvYWRlcj5cbiAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICB7L2lmfVxuICBcblxuXG48c3R5bGUgPlxuICBtYWluIHtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgbWF4LXdpZHRoOiA1NmVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBhZGRpbmc6IDJlbTtcbiAgICBtYXJnaW46IDAgYXV0bztcbiAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICB9XG4gIC5sb2FkZXItY29udGFpbmVyIHtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgaGVpZ2h0OiAxMDB2aDtcbiAgICB6LWluZGV4OiAxMDAwMDA7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczpjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIH1cblxuICAubG9hZGVyLWNvbnRhaW5lciBkaXYge1xuICAgICAgbWFyZ2luOiAwIGF1dG87XG4gICAgICBoZWlnaHQ6IDEwMHB4O1xuICAgICAgd2lkdGg6IDEwMHB4O1xuICAgIH1cblxuICA6Z2xvYmFsKC5jb250ZW50LWNvbnRhaW5lcikge1xuICAgIG1heC13aWR0aDogMTMwMHB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICB9XG5cbiAgOmdsb2JhbCgubWFpbi1jb250ZW50LWNvbnRhaW5lcikge1xuXHRtYXJnaW4tYm90dG9tOiA1MHB4O1xuICB9XG5cbjwvc3R5bGU+XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBaUNFLElBQUksNEJBQUMsQ0FBQyxBQUNKLFFBQVEsQ0FBRSxRQUFRLENBQ2xCLFNBQVMsQ0FBRSxJQUFJLENBQ2YsZ0JBQWdCLENBQUUsS0FBSyxDQUN2QixPQUFPLENBQUUsR0FBRyxDQUNaLE1BQU0sQ0FBRSxDQUFDLENBQUMsSUFBSSxDQUNkLFVBQVUsQ0FBRSxVQUFVLEFBQ3hCLENBQUMsQUFDRCxpQkFBaUIsNEJBQUMsQ0FBQyxBQUNqQixLQUFLLENBQUUsS0FBSyxDQUNaLE1BQU0sQ0FBRSxLQUFLLENBQ2IsT0FBTyxDQUFFLE1BQU0sQ0FDZixnQkFBZ0IsQ0FBRSxLQUFLLENBQ3ZCLE9BQU8sQ0FBRSxJQUFJLENBQ2IsWUFBWSxNQUFNLENBQ2xCLGVBQWUsQ0FBRSxNQUFNLEFBQ3pCLENBQUMsQUFFRCwrQkFBaUIsQ0FBQyxHQUFHLGNBQUMsQ0FBQyxBQUNuQixNQUFNLENBQUUsQ0FBQyxDQUFDLElBQUksQ0FDZCxNQUFNLENBQUUsS0FBSyxDQUNiLEtBQUssQ0FBRSxLQUFLLEFBQ2QsQ0FBQyxBQUVLLGtCQUFrQixBQUFFLENBQUMsQUFDM0IsU0FBUyxDQUFFLE1BQU0sQ0FDakIsS0FBSyxDQUFFLElBQUksQUFDYixDQUFDLEFBRU8sdUJBQXVCLEFBQUUsQ0FBQyxBQUNuQyxhQUFhLENBQUUsSUFBSSxBQUNsQixDQUFDIn0= */";
   append_dev(document.head, style);
-} // (24:2) {:else}
+} // (23:2) {:else}
 
 
 function create_else_block$1(ctx) {
   var div1;
   var div0;
+  var ringloader;
+  var current;
+  ringloader = new RingLoader({
+    props: {
+      size: "100",
+      color: "#FF3E00",
+      unit: "px",
+      duration: "5s"
+    },
+    $$inline: true
+  });
   var block = {
     c: function create() {
       div1 = element("div");
       div0 = element("div");
+      create_component(ringloader.$$.fragment);
       this.h();
     },
     l: function claim(nodes) {
@@ -22330,36 +22655,47 @@ function create_else_block$1(ctx) {
         class: true
       });
       var div0_nodes = children(div0);
+      claim_component(ringloader.$$.fragment, div0_nodes);
       div0_nodes.forEach(detach_dev);
       div1_nodes.forEach(detach_dev);
       this.h();
     },
     h: function hydrate() {
       attr_dev(div0, "class", "svelte-n70g7x");
-      add_location(div0, file$1, 25, 6, 647);
+      add_location(div0, file$1, 24, 6, 556);
       attr_dev(div1, "class", "loader-container svelte-n70g7x");
-      add_location(div1, file$1, 24, 4, 610);
+      add_location(div1, file$1, 23, 4, 519);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div1, anchor);
       append_dev(div1, div0);
+      mount_component(ringloader, div0, null);
+      current = true;
     },
     p: noop,
-    i: noop,
-    o: noop,
+    i: function intro(local) {
+      if (current) return;
+      transition_in(ringloader.$$.fragment, local);
+      current = true;
+    },
+    o: function outro(local) {
+      transition_out(ringloader.$$.fragment, local);
+      current = false;
+    },
     d: function destroy(detaching) {
       if (detaching) detach_dev(div1);
+      destroy_component(ringloader);
     }
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
     id: create_else_block$1.name,
     type: "else",
-    source: "(24:2) {:else}",
+    source: "(23:2) {:else}",
     ctx: ctx
   });
   return block;
-} // (16:2) {#if $isLocaleLoaded}
+} // (15:2) {#if $isLocaleLoaded}
 
 
 function create_if_block$2(ctx) {
@@ -22418,9 +22754,9 @@ function create_if_block$2(ctx) {
     },
     h: function hydrate() {
       attr_dev(div, "class", "content-container main-content-container");
-      add_location(div, file$1, 18, 6, 484);
+      add_location(div, file$1, 17, 6, 393);
       attr_dev(main, "class", "svelte-n70g7x");
-      add_location(main, file$1, 17, 4, 471);
+      add_location(main, file$1, 16, 4, 380);
     },
     m: function mount(target, anchor) {
       mount_component(nav, target, anchor);
@@ -22481,7 +22817,7 @@ function create_if_block$2(ctx) {
     block: block,
     id: create_if_block$2.name,
     type: "if",
-    source: "(16:2) {#if $isLocaleLoaded}",
+    source: "(15:2) {#if $isLocaleLoaded}",
     ctx: ctx
   });
   return block;
@@ -22598,6 +22934,7 @@ function instance$2($$self, $$props, $$invalidate) {
     return {
       Nav: Nav,
       Footer: Footer,
+      RingLoader: RingLoader,
       segment: segment,
       setupI18n: setupI18n,
       isLocaleLoaded: isLocaleLoaded,
@@ -23517,23 +23854,23 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
 var ignore = [/^\/blog\.json$/, /^\/blog\/([^/]+?)\.json$/];
 var components = [{
   js: function js() {
-    return Promise.all([import('./index.d3625767.js'), ]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.a360115b.js'), ]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./contacts.8375cf7e.js'), ]).then(function(x) { return x[0]; });
+    return Promise.all([import('./contacts.93c4ba0e.js'), ]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./about.2fc131ab.js'), ]).then(function(x) { return x[0]; });
+    return Promise.all([import('./about.9eda8032.js'), ]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./index.964b72d0.js'), ]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.b9a55a14.js'), ]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./[slug].679f8f88.js'), ]).then(function(x) { return x[0]; });
+    return Promise.all([import('./[slug].d2cff437.js'), ]).then(function(x) { return x[0]; });
   }
 }];
 var routes = function (d) {
